@@ -45,7 +45,7 @@
             this.userNameTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.userNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameTextBox.Location = new System.Drawing.Point(281, 301);
+            this.userNameTextBox.Location = new System.Drawing.Point(275, 313);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(195, 19);
             this.userNameTextBox.TabIndex = 2;
@@ -56,7 +56,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_password_1_36;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(219, 345);
+            this.pictureBox2.Location = new System.Drawing.Point(213, 356);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 3;
@@ -68,7 +68,7 @@
             this.loginPicbox.BackColor = System.Drawing.Color.Transparent;
             this.loginPicbox.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
             this.loginPicbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.loginPicbox.Location = new System.Drawing.Point(219, 292);
+            this.loginPicbox.Location = new System.Drawing.Point(213, 303);
             this.loginPicbox.Name = "loginPicbox";
             this.loginPicbox.Size = new System.Drawing.Size(40, 40);
             this.loginPicbox.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_lock_208;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(275, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(275, 141);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -93,7 +93,7 @@
             this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(281, 354);
+            this.textBox1.Location = new System.Drawing.Point(275, 364);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(195, 19);
             this.textBox1.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.LoginBtn.FlatAppearance.BorderSize = 0;
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginBtn.Location = new System.Drawing.Point(323, 396);
+            this.LoginBtn.Location = new System.Drawing.Point(316, 404);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(84, 33);
             this.LoginBtn.TabIndex = 5;

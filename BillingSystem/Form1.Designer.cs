@@ -63,7 +63,7 @@
             this.mainPanel.ForeColor = System.Drawing.SystemColors.Menu;
             this.mainPanel.Location = new System.Drawing.Point(46, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(962, 541);
+            this.mainPanel.Size = new System.Drawing.Size(962, 561);
             this.mainPanel.TabIndex = 2;
             // 
             // logoPanel
@@ -78,7 +78,7 @@
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(46, 541);
+            this.logoPanel.Size = new System.Drawing.Size(46, 561);
             this.logoPanel.TabIndex = 7;
             // 
             // userBtn
@@ -90,7 +90,7 @@
             this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userBtn.Location = new System.Drawing.Point(0, 165);
+            this.userBtn.Location = new System.Drawing.Point(0, 175);
             this.userBtn.Name = "userBtn";
             this.userBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.userBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -109,7 +109,7 @@
             this.inventoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inventoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inventoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.inventoryBtn.Location = new System.Drawing.Point(0, 324);
+            this.inventoryBtn.Location = new System.Drawing.Point(0, 334);
             this.inventoryBtn.Name = "inventoryBtn";
             this.inventoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.inventoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -128,7 +128,7 @@
             this.categoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.categoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.categoryBtn.Location = new System.Drawing.Point(0, 218);
+            this.categoryBtn.Location = new System.Drawing.Point(0, 228);
             this.categoryBtn.Name = "categoryBtn";
             this.categoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.categoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -147,7 +147,7 @@
             this.productsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productsBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.productsBtn.Location = new System.Drawing.Point(0, 271);
+            this.productsBtn.Location = new System.Drawing.Point(0, 281);
             this.productsBtn.Name = "productsBtn";
             this.productsBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.productsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -167,7 +167,7 @@
             this.transactionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transactionBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.transactionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transactionBtn.Location = new System.Drawing.Point(0, 377);
+            this.transactionBtn.Location = new System.Drawing.Point(0, 387);
             this.transactionBtn.Name = "transactionBtn";
             this.transactionBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.transactionBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -189,7 +189,7 @@
             this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.expandPanel.Location = new System.Drawing.Point(46, 0);
             this.expandPanel.Name = "expandPanel";
-            this.expandPanel.Size = new System.Drawing.Size(203, 541);
+            this.expandPanel.Size = new System.Drawing.Size(203, 561);
             this.expandPanel.TabIndex = 8;
             // 
             // humMenuRightBtn
@@ -225,7 +225,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(-3, 377);
+            this.pictureBox5.Location = new System.Drawing.Point(-3, 387);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(50, 50);
             this.pictureBox5.TabIndex = 1;
@@ -237,7 +237,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(-3, 324);
+            this.pictureBox4.Location = new System.Drawing.Point(-3, 334);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.TabIndex = 1;
@@ -249,7 +249,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(-3, 269);
+            this.pictureBox3.Location = new System.Drawing.Point(-3, 279);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.TabIndex = 1;
@@ -261,7 +261,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 215);
+            this.pictureBox2.Location = new System.Drawing.Point(-3, 225);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 1;
@@ -273,7 +273,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 176);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 0;
@@ -286,19 +286,19 @@
             this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userLogin1.Location = new System.Drawing.Point(0, 0);
             this.userLogin1.Name = "userLogin1";
-            this.userLogin1.Size = new System.Drawing.Size(962, 541);
+            this.userLogin1.Size = new System.Drawing.Size(962, 561);
             this.userLogin1.TabIndex = 0;
             // 
             // billingSystemMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 541);
+            this.ClientSize = new System.Drawing.Size(1008, 561);
             this.Controls.Add(this.expandPanel);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.logoPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1024, 580);
+            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "billingSystemMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillingSystem";

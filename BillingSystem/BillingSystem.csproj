@@ -87,9 +87,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-361.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-male-user-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-opened-folder-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-basket-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-in-inventory-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-list-36.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,177 +29,293 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(billingSystemMain));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.transactionBtn = new System.Windows.Forms.Button();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.logoPanel = new System.Windows.Forms.Panel();
+            this.userBtn = new System.Windows.Forms.Button();
             this.inventoryBtn = new System.Windows.Forms.Button();
             this.categoryBtn = new System.Windows.Forms.Button();
             this.productsBtn = new System.Windows.Forms.Button();
-            this.userBtn = new System.Windows.Forms.Button();
-            this.hmBgrBtn = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2.SuspendLayout();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.transactionBtn = new System.Windows.Forms.Button();
+            this.humMenuLeftBtn = new System.Windows.Forms.Button();
+            this.expandPanel = new System.Windows.Forms.Panel();
+            this.humMenuRightBtn = new System.Windows.Forms.Button();
+            this.logoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.expandPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // mainPanel
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel2.Controls.Add(this.transactionBtn);
-            this.panel2.Controls.Add(this.inventoryBtn);
-            this.panel2.Controls.Add(this.categoryBtn);
-            this.panel2.Controls.Add(this.productsBtn);
-            this.panel2.Controls.Add(this.userBtn);
-            this.panel2.Controls.Add(this.hmBgrBtn);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(241, 607);
-            this.panel2.TabIndex = 1;
+            this.mainPanel.BackColor = System.Drawing.Color.Silver;
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.ForeColor = System.Drawing.SystemColors.Menu;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(979, 607);
+            this.mainPanel.TabIndex = 2;
             // 
-            // transactionBtn
+            // logoPanel
             // 
-            this.transactionBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.transactionBtn.FlatAppearance.BorderSize = 0;
-            this.transactionBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.transactionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transactionBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transactionBtn.Image = ((System.Drawing.Image)(resources.GetObject("transactionBtn.Image")));
-            this.transactionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transactionBtn.Location = new System.Drawing.Point(0, 411);
-            this.transactionBtn.Name = "transactionBtn";
-            this.transactionBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.transactionBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.transactionBtn.Size = new System.Drawing.Size(230, 50);
-            this.transactionBtn.TabIndex = 6;
-            this.transactionBtn.Text = "Transaction";
-            this.transactionBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.transactionBtn.UseVisualStyleBackColor = true;
-            // 
-            // inventoryBtn
-            // 
-            this.inventoryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.inventoryBtn.FlatAppearance.BorderSize = 0;
-            this.inventoryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.inventoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inventoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventoryBtn.Image = ((System.Drawing.Image)(resources.GetObject("inventoryBtn.Image")));
-            this.inventoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inventoryBtn.Location = new System.Drawing.Point(0, 358);
-            this.inventoryBtn.Name = "inventoryBtn";
-            this.inventoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.inventoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.inventoryBtn.Size = new System.Drawing.Size(230, 50);
-            this.inventoryBtn.TabIndex = 5;
-            this.inventoryBtn.Text = "Inventory";
-            this.inventoryBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.inventoryBtn.UseVisualStyleBackColor = true;
-            // 
-            // categoryBtn
-            // 
-            this.categoryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.categoryBtn.FlatAppearance.BorderSize = 0;
-            this.categoryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.categoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.categoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryBtn.Image = ((System.Drawing.Image)(resources.GetObject("categoryBtn.Image")));
-            this.categoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.categoryBtn.Location = new System.Drawing.Point(0, 252);
-            this.categoryBtn.Name = "categoryBtn";
-            this.categoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.categoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.categoryBtn.Size = new System.Drawing.Size(230, 50);
-            this.categoryBtn.TabIndex = 4;
-            this.categoryBtn.Text = "Category";
-            this.categoryBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.categoryBtn.UseVisualStyleBackColor = true;
-            // 
-            // productsBtn
-            // 
-            this.productsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.productsBtn.FlatAppearance.BorderSize = 0;
-            this.productsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.productsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.productsBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productsBtn.Image = ((System.Drawing.Image)(resources.GetObject("productsBtn.Image")));
-            this.productsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.productsBtn.Location = new System.Drawing.Point(0, 305);
-            this.productsBtn.Name = "productsBtn";
-            this.productsBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.productsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.productsBtn.Size = new System.Drawing.Size(230, 50);
-            this.productsBtn.TabIndex = 3;
-            this.productsBtn.Text = "Products";
-            this.productsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.productsBtn.UseVisualStyleBackColor = true;
+            this.logoPanel.BackColor = System.Drawing.SystemColors.GrayText;
+            this.logoPanel.Controls.Add(this.humMenuLeftBtn);
+            this.logoPanel.Controls.Add(this.pictureBox5);
+            this.logoPanel.Controls.Add(this.pictureBox4);
+            this.logoPanel.Controls.Add(this.pictureBox3);
+            this.logoPanel.Controls.Add(this.pictureBox2);
+            this.logoPanel.Controls.Add(this.pictureBox1);
+            this.logoPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.logoPanel.Location = new System.Drawing.Point(0, 0);
+            this.logoPanel.Name = "logoPanel";
+            this.logoPanel.Size = new System.Drawing.Size(46, 607);
+            this.logoPanel.TabIndex = 7;
             // 
             // userBtn
             // 
+            this.userBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.userBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userBtn.FlatAppearance.BorderSize = 0;
             this.userBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
             this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userBtn.Image = ((System.Drawing.Image)(resources.GetObject("userBtn.Image")));
             this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userBtn.Location = new System.Drawing.Point(0, 199);
+            this.userBtn.Location = new System.Drawing.Point(0, 198);
             this.userBtn.Name = "userBtn";
             this.userBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.userBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.userBtn.Size = new System.Drawing.Size(230, 50);
+            this.userBtn.Size = new System.Drawing.Size(204, 50);
             this.userBtn.TabIndex = 2;
             this.userBtn.Text = "User";
-            this.userBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.userBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.userBtn.UseVisualStyleBackColor = true;
             // 
-            // hmBgrBtn
+            // inventoryBtn
             // 
-            this.hmBgrBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.hmBgrBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hmBgrBtn.BackgroundImage")));
-            this.hmBgrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.hmBgrBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.hmBgrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hmBgrBtn.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.hmBgrBtn.Location = new System.Drawing.Point(196, 0);
-            this.hmBgrBtn.Name = "hmBgrBtn";
-            this.hmBgrBtn.Size = new System.Drawing.Size(45, 42);
-            this.hmBgrBtn.TabIndex = 0;
-            this.hmBgrBtn.UseVisualStyleBackColor = true;
+            this.inventoryBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.inventoryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.inventoryBtn.FlatAppearance.BorderSize = 0;
+            this.inventoryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.inventoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.inventoryBtn.Location = new System.Drawing.Point(0, 357);
+            this.inventoryBtn.Name = "inventoryBtn";
+            this.inventoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.inventoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.inventoryBtn.Size = new System.Drawing.Size(204, 50);
+            this.inventoryBtn.TabIndex = 5;
+            this.inventoryBtn.Text = "Inventory";
+            this.inventoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryBtn.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // categoryBtn
             // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.ForeColor = System.Drawing.SystemColors.Menu;
-            this.panel3.Location = new System.Drawing.Point(241, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(738, 607);
-            this.panel3.TabIndex = 2;
+            this.categoryBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.categoryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.categoryBtn.FlatAppearance.BorderSize = 0;
+            this.categoryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.categoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.categoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.categoryBtn.Location = new System.Drawing.Point(0, 251);
+            this.categoryBtn.Name = "categoryBtn";
+            this.categoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.categoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.categoryBtn.Size = new System.Drawing.Size(204, 50);
+            this.categoryBtn.TabIndex = 4;
+            this.categoryBtn.Text = "Category";
+            this.categoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.categoryBtn.UseVisualStyleBackColor = true;
+            // 
+            // productsBtn
+            // 
+            this.productsBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.productsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.productsBtn.FlatAppearance.BorderSize = 0;
+            this.productsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.productsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.productsBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.productsBtn.Location = new System.Drawing.Point(0, 304);
+            this.productsBtn.Name = "productsBtn";
+            this.productsBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.productsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.productsBtn.Size = new System.Drawing.Size(204, 50);
+            this.productsBtn.TabIndex = 3;
+            this.productsBtn.Text = "Products";
+            this.productsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.productsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.productsBtn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox5.Location = new System.Drawing.Point(-3, 410);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(-3, 357);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(-3, 302);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(-3, 248);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 199);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // transactionBtn
+            // 
+            this.transactionBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.transactionBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.transactionBtn.FlatAppearance.BorderSize = 0;
+            this.transactionBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.transactionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.transactionBtn.Location = new System.Drawing.Point(0, 410);
+            this.transactionBtn.Name = "transactionBtn";
+            this.transactionBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.transactionBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.transactionBtn.Size = new System.Drawing.Size(204, 50);
+            this.transactionBtn.TabIndex = 6;
+            this.transactionBtn.Text = "Transaction";
+            this.transactionBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.transactionBtn.UseVisualStyleBackColor = true;
+            // 
+            // humMenuLeftBtn
+            // 
+            this.humMenuLeftBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuLeftBtn.BackgroundImage")));
+            this.humMenuLeftBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.humMenuLeftBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.humMenuLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.humMenuLeftBtn.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.humMenuLeftBtn.Location = new System.Drawing.Point(2, 3);
+            this.humMenuLeftBtn.Name = "humMenuLeftBtn";
+            this.humMenuLeftBtn.Size = new System.Drawing.Size(45, 42);
+            this.humMenuLeftBtn.TabIndex = 7;
+            this.humMenuLeftBtn.UseVisualStyleBackColor = true;
+            // 
+            // expandPanel
+            // 
+            this.expandPanel.BackColor = System.Drawing.SystemColors.GrayText;
+            this.expandPanel.Controls.Add(this.humMenuRightBtn);
+            this.expandPanel.Controls.Add(this.transactionBtn);
+            this.expandPanel.Controls.Add(this.productsBtn);
+            this.expandPanel.Controls.Add(this.categoryBtn);
+            this.expandPanel.Controls.Add(this.userBtn);
+            this.expandPanel.Controls.Add(this.inventoryBtn);
+            this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.expandPanel.Location = new System.Drawing.Point(46, 0);
+            this.expandPanel.Name = "expandPanel";
+            this.expandPanel.Size = new System.Drawing.Size(203, 607);
+            this.expandPanel.TabIndex = 8;
+            // 
+            // humMenuRightBtn
+            // 
+            this.humMenuRightBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.humMenuRightBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuRightBtn.BackgroundImage")));
+            this.humMenuRightBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.humMenuRightBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.humMenuRightBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.humMenuRightBtn.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.humMenuRightBtn.Location = new System.Drawing.Point(155, 3);
+            this.humMenuRightBtn.Name = "humMenuRightBtn";
+            this.humMenuRightBtn.Size = new System.Drawing.Size(45, 42);
+            this.humMenuRightBtn.TabIndex = 8;
+            this.humMenuRightBtn.UseVisualStyleBackColor = true;
             // 
             // billingSystemMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 607);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.expandPanel);
+            this.Controls.Add(this.logoPanel);
+            this.Controls.Add(this.mainPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "billingSystemMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillingSystem";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel2.ResumeLayout(false);
+            this.logoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.expandPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button hmBgrBtn;
+        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Button userBtn;
         private System.Windows.Forms.Button transactionBtn;
         private System.Windows.Forms.Button inventoryBtn;
         private System.Windows.Forms.Button categoryBtn;
         private System.Windows.Forms.Button productsBtn;
+        private System.Windows.Forms.Panel logoPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button humMenuLeftBtn;
+        private System.Windows.Forms.Panel expandPanel;
+        private System.Windows.Forms.Button humMenuRightBtn;
     }
 }
 

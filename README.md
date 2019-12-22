@@ -15,4 +15,4 @@ if you have following issues running this code then follow the solution links be
 ## License & copyright
 © Md. Shafekul Abid, BSc in CSE, SST - BOU, DUET Campus.
 
-License Under [MIT License](LICENSE)
+License under the [MIT License](LICENSE)

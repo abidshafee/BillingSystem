@@ -15,6 +15,6 @@ if you have following issues running this code then follow the solution links be
 
 ________________________________________________________________
 ## License & copyright
-© Md. Shafekul Abid, BSc in CSE, SST - BOU, DUET Campus.
+© Md. Shafekul Abid, BSc in CSE, SST_BOU, DUET Campus.
 
 License under the [MIT License](LICENSE)

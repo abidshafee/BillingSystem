@@ -30,7 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(billingSystemMain));
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.userLogin1 = new BillingSystem.UserLogin();
             this.logoPanel = new System.Windows.Forms.Panel();
+            this.humMenuLeftBtn = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userBtn = new System.Windows.Forms.Button();
             this.inventoryBtn = new System.Windows.Forms.Button();
             this.categoryBtn = new System.Windows.Forms.Button();
@@ -38,21 +45,14 @@
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
             this.humMenuRightBtn = new System.Windows.Forms.Button();
-            this.humMenuLeftBtn = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userLogin1 = new BillingSystem.UserLogin();
             this.mainPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
-            this.expandPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.expandPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -65,6 +65,16 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(962, 561);
             this.mainPanel.TabIndex = 2;
+            // 
+            // userLogin1
+            // 
+            this.userLogin1.AutoSize = true;
+            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
+            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userLogin1.Location = new System.Drawing.Point(0, 0);
+            this.userLogin1.Name = "userLogin1";
+            this.userLogin1.Size = new System.Drawing.Size(962, 561);
+            this.userLogin1.TabIndex = 0;
             // 
             // logoPanel
             // 
@@ -81,6 +91,84 @@
             this.logoPanel.Size = new System.Drawing.Size(46, 561);
             this.logoPanel.TabIndex = 7;
             // 
+            // humMenuLeftBtn
+            // 
+            this.humMenuLeftBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuLeftBtn.BackgroundImage")));
+            this.humMenuLeftBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.humMenuLeftBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.humMenuLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.humMenuLeftBtn.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.humMenuLeftBtn.Location = new System.Drawing.Point(2, 3);
+            this.humMenuLeftBtn.Name = "humMenuLeftBtn";
+            this.humMenuLeftBtn.Size = new System.Drawing.Size(45, 42);
+            this.humMenuLeftBtn.TabIndex = 7;
+            this.humMenuLeftBtn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox5.Location = new System.Drawing.Point(-2, 387);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(-2, 334);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 279);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 225);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 176);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // userBtn
             // 
             this.userBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -96,7 +184,7 @@
             this.userBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.userBtn.Size = new System.Drawing.Size(204, 50);
             this.userBtn.TabIndex = 2;
-            this.userBtn.Text = "User";
+            this.userBtn.Text = "User Login";
             this.userBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.userBtn.UseVisualStyleBackColor = true;
             // 
@@ -206,89 +294,6 @@
             this.humMenuRightBtn.TabIndex = 8;
             this.humMenuRightBtn.UseVisualStyleBackColor = true;
             // 
-            // humMenuLeftBtn
-            // 
-            this.humMenuLeftBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuLeftBtn.BackgroundImage")));
-            this.humMenuLeftBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.humMenuLeftBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.humMenuLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.humMenuLeftBtn.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.humMenuLeftBtn.Location = new System.Drawing.Point(2, 3);
-            this.humMenuLeftBtn.Name = "humMenuLeftBtn";
-            this.humMenuLeftBtn.Size = new System.Drawing.Size(45, 42);
-            this.humMenuLeftBtn.TabIndex = 7;
-            this.humMenuLeftBtn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(-3, 387);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(-3, 334);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(-3, 279);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 225);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 176);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // userLogin1
-            // 
-            this.userLogin1.AutoSize = true;
-            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
-            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userLogin1.Location = new System.Drawing.Point(0, 0);
-            this.userLogin1.Name = "userLogin1";
-            this.userLogin1.Size = new System.Drawing.Size(962, 561);
-            this.userLogin1.TabIndex = 0;
-            // 
             // billingSystemMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,12 +311,12 @@
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.logoPanel.ResumeLayout(false);
-            this.expandPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.expandPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

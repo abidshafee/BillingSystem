@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(billingSystemMain));
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.userLogin1 = new BillingSystem.UserLogin();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.humMenuLeftBtn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -44,7 +44,8 @@
             this.productsBtn = new System.Windows.Forms.Button();
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
-            this.humMenuRightBtn = new System.Windows.Forms.Button();
+            this.userLogin1 = new BillingSystem.UserLogin();
+            this.sPan_timer = new System.Windows.Forms.Timer(this.components);
             this.mainPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -61,20 +62,10 @@
             this.mainPanel.Controls.Add(this.userLogin1);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.ForeColor = System.Drawing.SystemColors.Menu;
-            this.mainPanel.Location = new System.Drawing.Point(46, 0);
+            this.mainPanel.Location = new System.Drawing.Point(45, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(962, 561);
+            this.mainPanel.Size = new System.Drawing.Size(963, 561);
             this.mainPanel.TabIndex = 2;
-            // 
-            // userLogin1
-            // 
-            this.userLogin1.AutoSize = true;
-            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
-            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userLogin1.Location = new System.Drawing.Point(0, 0);
-            this.userLogin1.Name = "userLogin1";
-            this.userLogin1.Size = new System.Drawing.Size(962, 561);
-            this.userLogin1.TabIndex = 0;
             // 
             // logoPanel
             // 
@@ -88,7 +79,7 @@
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(46, 561);
+            this.logoPanel.Size = new System.Drawing.Size(45, 561);
             this.logoPanel.TabIndex = 7;
             // 
             // humMenuLeftBtn
@@ -98,15 +89,15 @@
             this.humMenuLeftBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
             this.humMenuLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.humMenuLeftBtn.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.humMenuLeftBtn.Location = new System.Drawing.Point(2, 3);
+            this.humMenuLeftBtn.Location = new System.Drawing.Point(0, 0);
             this.humMenuLeftBtn.Name = "humMenuLeftBtn";
             this.humMenuLeftBtn.Size = new System.Drawing.Size(45, 42);
             this.humMenuLeftBtn.TabIndex = 7;
             this.humMenuLeftBtn.UseVisualStyleBackColor = true;
+            this.humMenuLeftBtn.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -119,7 +110,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -132,7 +122,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -145,7 +134,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -158,7 +146,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -171,7 +158,6 @@
             // 
             // userBtn
             // 
-            this.userBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.userBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userBtn.FlatAppearance.BorderSize = 0;
             this.userBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -190,7 +176,6 @@
             // 
             // inventoryBtn
             // 
-            this.inventoryBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.inventoryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.inventoryBtn.FlatAppearance.BorderSize = 0;
             this.inventoryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -209,7 +194,6 @@
             // 
             // categoryBtn
             // 
-            this.categoryBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.categoryBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.categoryBtn.FlatAppearance.BorderSize = 0;
             this.categoryBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -228,7 +212,6 @@
             // 
             // productsBtn
             // 
-            this.productsBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.productsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.productsBtn.FlatAppearance.BorderSize = 0;
             this.productsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -248,7 +231,6 @@
             // 
             // transactionBtn
             // 
-            this.transactionBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.transactionBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.transactionBtn.FlatAppearance.BorderSize = 0;
             this.transactionBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -268,31 +250,31 @@
             // expandPanel
             // 
             this.expandPanel.BackColor = System.Drawing.SystemColors.GrayText;
-            this.expandPanel.Controls.Add(this.humMenuRightBtn);
             this.expandPanel.Controls.Add(this.transactionBtn);
             this.expandPanel.Controls.Add(this.productsBtn);
             this.expandPanel.Controls.Add(this.categoryBtn);
             this.expandPanel.Controls.Add(this.userBtn);
             this.expandPanel.Controls.Add(this.inventoryBtn);
             this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.expandPanel.Location = new System.Drawing.Point(46, 0);
+            this.expandPanel.Location = new System.Drawing.Point(45, 0);
             this.expandPanel.Name = "expandPanel";
-            this.expandPanel.Size = new System.Drawing.Size(203, 561);
+            this.expandPanel.Size = new System.Drawing.Size(205, 561);
             this.expandPanel.TabIndex = 8;
             // 
-            // humMenuRightBtn
+            // userLogin1
             // 
-            this.humMenuRightBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.humMenuRightBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuRightBtn.BackgroundImage")));
-            this.humMenuRightBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.humMenuRightBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.humMenuRightBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.humMenuRightBtn.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.humMenuRightBtn.Location = new System.Drawing.Point(155, 3);
-            this.humMenuRightBtn.Name = "humMenuRightBtn";
-            this.humMenuRightBtn.Size = new System.Drawing.Size(45, 42);
-            this.humMenuRightBtn.TabIndex = 8;
-            this.humMenuRightBtn.UseVisualStyleBackColor = true;
+            this.userLogin1.AutoSize = true;
+            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
+            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userLogin1.Location = new System.Drawing.Point(0, 0);
+            this.userLogin1.Name = "userLogin1";
+            this.userLogin1.Size = new System.Drawing.Size(963, 561);
+            this.userLogin1.TabIndex = 0;
+            // 
+            // sPan_timer
+            // 
+            this.sPan_timer.Interval = 80;
+            this.sPan_timer.Tick += new System.EventHandler(this.sPan_timer_Tick);
             // 
             // billingSystemMain
             // 
@@ -336,8 +318,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button humMenuLeftBtn;
         private System.Windows.Forms.Panel expandPanel;
-        private System.Windows.Forms.Button humMenuRightBtn;
         private UserLogin userLogin1;
+        private System.Windows.Forms.Timer sPan_timer;
     }
 }
 

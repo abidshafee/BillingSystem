@@ -15,15 +15,49 @@ namespace BillingSystem
          [DllImportAttribute("user32.dll")]
          public static extern bool ReleaseCapture();
          */
+        int hiddenPanelWidth;
+        bool hiddenPan;
 
         public billingSystemMain()
         {
             InitializeComponent();
+            hiddenPanelWidth = 205;
+            hiddenPan = true;
+            //expandPanel.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            expandPanel.Hide();
+           
+        }
+
+        private void humMenuLeftBtn_Click(object sender, EventArgs e)
+        {
+            sPan_timer.Start();
+        }
+
+        private void sPan_timer_Tick(object sender, EventArgs e)
+        {
+            if (hiddenPan)
+            {
+                expandPanel.Width = 205;
+                if (expandPanel.Width >= hiddenPanelWidth)
+                {
+                    sPan_timer.Stop();
+                    hiddenPan = false;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                expandPanel.Width = 0;
+                if (expandPanel.Width <= 0)
+                {
+                    sPan_timer.Stop();
+                    hiddenPan = true;
+                    this.Refresh();
+                }
+            }
         }
 
         // private void pictureBox1_Click(object sender, EventArgs e)

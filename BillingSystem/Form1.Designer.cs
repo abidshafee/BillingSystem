@@ -172,11 +172,12 @@
             this.userBtn.Location = new System.Drawing.Point(0, 185);
             this.userBtn.Name = "userBtn";
             this.userBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.userBtn.Size = new System.Drawing.Size(183, 50);
+            this.userBtn.Size = new System.Drawing.Size(205, 50);
             this.userBtn.TabIndex = 2;
             this.userBtn.Text = "User Login";
             this.userBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.userBtn.UseVisualStyleBackColor = true;
+            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
             // inventoryBtn
             // 
@@ -190,7 +191,7 @@
             this.inventoryBtn.Name = "inventoryBtn";
             this.inventoryBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.inventoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.inventoryBtn.Size = new System.Drawing.Size(183, 50);
+            this.inventoryBtn.Size = new System.Drawing.Size(205, 50);
             this.inventoryBtn.TabIndex = 5;
             this.inventoryBtn.Text = "Inventory";
             this.inventoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,7 +209,7 @@
             this.categoryBtn.Name = "categoryBtn";
             this.categoryBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.categoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.categoryBtn.Size = new System.Drawing.Size(183, 50);
+            this.categoryBtn.Size = new System.Drawing.Size(205, 50);
             this.categoryBtn.TabIndex = 4;
             this.categoryBtn.Text = "Category";
             this.categoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -226,7 +227,7 @@
             this.productsBtn.Name = "productsBtn";
             this.productsBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.productsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.productsBtn.Size = new System.Drawing.Size(183, 50);
+            this.productsBtn.Size = new System.Drawing.Size(205, 50);
             this.productsBtn.TabIndex = 3;
             this.productsBtn.Text = "Products";
             this.productsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,7 +246,7 @@
             this.transactionBtn.Name = "transactionBtn";
             this.transactionBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.transactionBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.transactionBtn.Size = new System.Drawing.Size(183, 50);
+            this.transactionBtn.Size = new System.Drawing.Size(205, 50);
             this.transactionBtn.TabIndex = 6;
             this.transactionBtn.Text = "Transaction";
             this.transactionBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -262,7 +263,7 @@
             this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.expandPanel.Location = new System.Drawing.Point(45, 0);
             this.expandPanel.Name = "expandPanel";
-            this.expandPanel.Size = new System.Drawing.Size(183, 561);
+            this.expandPanel.Size = new System.Drawing.Size(205, 561);
             this.expandPanel.TabIndex = 8;
             // 
             // SPan_timer
@@ -274,10 +275,9 @@
             // 
             this.UserLogin1.AutoSize = true;
             this.UserLogin1.BackColor = System.Drawing.Color.LightGray;
-            this.UserLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserLogin1.Location = new System.Drawing.Point(0, 0);
+            this.UserLogin1.Location = new System.Drawing.Point(248, 3);
             this.UserLogin1.Name = "UserLogin1";
-            this.UserLogin1.Size = new System.Drawing.Size(963, 561);
+            this.UserLogin1.Size = new System.Drawing.Size(681, 462);
             this.UserLogin1.TabIndex = 0;
             // 
             // billingSystemMain

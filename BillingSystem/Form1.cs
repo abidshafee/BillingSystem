@@ -59,7 +59,24 @@ namespace BillingSystem
                     this.Refresh();
                 }
             }
-        }//end_of sPan_timer
+        }// end_of sPan_timer
+        
+        // this will bring userlogin front of the Main Panel
+        private void userBtn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(UserLogin.Instance))
+            {
+                MainPanel.Controls.Add(UserLogin.Instance);
+                UserLogin.Instance.Dock = DockStyle.Fill;
+                UserLogin.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+            else
+            {
+                UserLogin.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+        }
 
         // private void pictureBox1_Click(object sender, EventArgs e)
         //{

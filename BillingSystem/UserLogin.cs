@@ -12,9 +12,11 @@ namespace BillingSystem
 {
     public partial class UserLogin : UserControl
     {
-        private static UserLogin _instance;
+        private static UserLogin _instance; // an instance variable of UserLogin class type
 
-        public static UserLogin instance
+        // creating an instance of UserLogin class
+        // so that we can access this instance from other class
+        public static UserLogin Instance
         {
             get
             {

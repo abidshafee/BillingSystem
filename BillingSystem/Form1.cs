@@ -30,12 +30,13 @@ namespace BillingSystem
         {
            
         }
-
+        // calling timer in the button, bcoz timer holds the requited -
+        // Animation for slider animation
         private void humMenuLeftBtn_Click(object sender, EventArgs e)
         {
             sPan_timer.Start();
         }
-
+        // timer containing anim code for sliding manu
         private void sPan_timer_Tick(object sender, EventArgs e)
         {
             if (hiddenPan)
@@ -58,7 +59,7 @@ namespace BillingSystem
                     this.Refresh();
                 }
             }
-        }
+        }//end_of sPan_timer
 
         // private void pictureBox1_Click(object sender, EventArgs e)
         //{

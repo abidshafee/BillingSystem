@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(billingSystemMain));
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.userLogin1 = new BillingSystem.UserLogin();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.humMenuLeftBtn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -44,7 +45,6 @@
             this.productsBtn = new System.Windows.Forms.Button();
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
-            this.userLogin1 = new BillingSystem.UserLogin();
             this.sPan_timer = new System.Windows.Forms.Timer(this.components);
             this.mainPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -66,6 +66,16 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(963, 561);
             this.mainPanel.TabIndex = 2;
+            // 
+            // userLogin1
+            // 
+            this.userLogin1.AutoSize = true;
+            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
+            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userLogin1.Location = new System.Drawing.Point(0, 0);
+            this.userLogin1.Name = "userLogin1";
+            this.userLogin1.Size = new System.Drawing.Size(963, 561);
+            this.userLogin1.TabIndex = 0;
             // 
             // logoPanel
             // 
@@ -101,60 +111,65 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(-2, 387);
+            this.pictureBox5.Location = new System.Drawing.Point(-2, 397);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.pictureBox5.Size = new System.Drawing.Size(50, 50);
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(-2, 334);
+            this.pictureBox4.Location = new System.Drawing.Point(-2, 344);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(-2, 279);
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 289);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 225);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 235);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 176);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 186);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // userBtn
             // 
@@ -164,7 +179,7 @@
             this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userBtn.Location = new System.Drawing.Point(0, 175);
+            this.userBtn.Location = new System.Drawing.Point(0, 185);
             this.userBtn.Name = "userBtn";
             this.userBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.userBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -182,7 +197,7 @@
             this.inventoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inventoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inventoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.inventoryBtn.Location = new System.Drawing.Point(0, 334);
+            this.inventoryBtn.Location = new System.Drawing.Point(0, 344);
             this.inventoryBtn.Name = "inventoryBtn";
             this.inventoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.inventoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -200,7 +215,7 @@
             this.categoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.categoryBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.categoryBtn.Location = new System.Drawing.Point(0, 228);
+            this.categoryBtn.Location = new System.Drawing.Point(0, 238);
             this.categoryBtn.Name = "categoryBtn";
             this.categoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.categoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -218,7 +233,7 @@
             this.productsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productsBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.productsBtn.Location = new System.Drawing.Point(0, 281);
+            this.productsBtn.Location = new System.Drawing.Point(0, 291);
             this.productsBtn.Name = "productsBtn";
             this.productsBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.productsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -237,7 +252,7 @@
             this.transactionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transactionBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.transactionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transactionBtn.Location = new System.Drawing.Point(0, 387);
+            this.transactionBtn.Location = new System.Drawing.Point(0, 397);
             this.transactionBtn.Name = "transactionBtn";
             this.transactionBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.transactionBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -258,18 +273,8 @@
             this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.expandPanel.Location = new System.Drawing.Point(45, 0);
             this.expandPanel.Name = "expandPanel";
-            this.expandPanel.Size = new System.Drawing.Size(205, 561);
+            this.expandPanel.Size = new System.Drawing.Size(10, 561);
             this.expandPanel.TabIndex = 8;
-            // 
-            // userLogin1
-            // 
-            this.userLogin1.AutoSize = true;
-            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
-            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userLogin1.Location = new System.Drawing.Point(0, 0);
-            this.userLogin1.Name = "userLogin1";
-            this.userLogin1.Size = new System.Drawing.Size(963, 561);
-            this.userLogin1.TabIndex = 0;
             // 
             // sPan_timer
             // 

@@ -41,7 +41,7 @@ namespace BillingSystem
         {
             if (hiddenPan)
             {
-                expandPanel.Width += 205;
+                expandPanel.Width += 25;
                 if (expandPanel.Width >= hiddenPanelWidth)
                 {
                     sPan_timer.Stop();
@@ -51,7 +51,7 @@ namespace BillingSystem
             }
             else
             {
-                expandPanel.Width = 0;
+                expandPanel.Width -= 25;
                 if (expandPanel.Width <= 0)
                 {
                     sPan_timer.Stop();

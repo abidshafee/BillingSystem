@@ -278,6 +278,7 @@
             // 
             // sPan_timer
             // 
+            this.sPan_timer.Interval = 25;
             this.sPan_timer.Tick += new System.EventHandler(this.sPan_timer_Tick);
             // 
             // billingSystemMain

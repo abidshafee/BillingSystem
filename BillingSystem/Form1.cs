@@ -23,7 +23,7 @@ namespace BillingSystem
             InitializeComponent();
             hiddenPanelWidth = 205;
             hiddenPan = true;
-            //expandPanel.Hide();
+            expandPanel.Width = 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace BillingSystem
         {
             if (hiddenPan)
             {
-                expandPanel.Width = 205;
+                expandPanel.Width += 205;
                 if (expandPanel.Width >= hiddenPanelWidth)
                 {
                     sPan_timer.Stop();

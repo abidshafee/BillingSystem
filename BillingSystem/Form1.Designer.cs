@@ -30,8 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(billingSystemMain));
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.userLogin1 = new BillingSystem.UserLogin();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.humMenuLeftBtn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -45,8 +44,9 @@
             this.productsBtn = new System.Windows.Forms.Button();
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
-            this.sPan_timer = new System.Windows.Forms.Timer(this.components);
-            this.mainPanel.SuspendLayout();
+            this.SPan_timer = new System.Windows.Forms.Timer(this.components);
+            this.UserLogin1 = new BillingSystem.UserLogin();
+            this.MainPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -56,26 +56,16 @@
             this.expandPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mainPanel
+            // MainPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.Color.Silver;
-            this.mainPanel.Controls.Add(this.userLogin1);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.ForeColor = System.Drawing.SystemColors.Menu;
-            this.mainPanel.Location = new System.Drawing.Point(45, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(963, 561);
-            this.mainPanel.TabIndex = 2;
-            // 
-            // userLogin1
-            // 
-            this.userLogin1.AutoSize = true;
-            this.userLogin1.BackColor = System.Drawing.Color.LightGray;
-            this.userLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userLogin1.Location = new System.Drawing.Point(0, 0);
-            this.userLogin1.Name = "userLogin1";
-            this.userLogin1.Size = new System.Drawing.Size(963, 561);
-            this.userLogin1.TabIndex = 0;
+            this.MainPanel.BackColor = System.Drawing.Color.Silver;
+            this.MainPanel.Controls.Add(this.UserLogin1);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.ForeColor = System.Drawing.SystemColors.Menu;
+            this.MainPanel.Location = new System.Drawing.Point(45, 0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(963, 561);
+            this.MainPanel.TabIndex = 2;
             // 
             // logoPanel
             // 
@@ -173,17 +163,16 @@
             // 
             // userBtn
             // 
-            this.userBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.userBtn.FlatAppearance.BorderSize = 0;
             this.userBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
             this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.userBtn.Location = new System.Drawing.Point(0, 185);
             this.userBtn.Name = "userBtn";
-            this.userBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.userBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.userBtn.Size = new System.Drawing.Size(204, 50);
+            this.userBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.userBtn.Size = new System.Drawing.Size(183, 50);
             this.userBtn.TabIndex = 2;
             this.userBtn.Text = "User Login";
             this.userBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,9 +188,9 @@
             this.inventoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.inventoryBtn.Location = new System.Drawing.Point(0, 344);
             this.inventoryBtn.Name = "inventoryBtn";
-            this.inventoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.inventoryBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.inventoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.inventoryBtn.Size = new System.Drawing.Size(204, 50);
+            this.inventoryBtn.Size = new System.Drawing.Size(183, 50);
             this.inventoryBtn.TabIndex = 5;
             this.inventoryBtn.Text = "Inventory";
             this.inventoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -217,9 +206,9 @@
             this.categoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.categoryBtn.Location = new System.Drawing.Point(0, 238);
             this.categoryBtn.Name = "categoryBtn";
-            this.categoryBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.categoryBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.categoryBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.categoryBtn.Size = new System.Drawing.Size(204, 50);
+            this.categoryBtn.Size = new System.Drawing.Size(183, 50);
             this.categoryBtn.TabIndex = 4;
             this.categoryBtn.Text = "Category";
             this.categoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,9 +224,9 @@
             this.productsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.productsBtn.Location = new System.Drawing.Point(0, 291);
             this.productsBtn.Name = "productsBtn";
-            this.productsBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.productsBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.productsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.productsBtn.Size = new System.Drawing.Size(204, 50);
+            this.productsBtn.Size = new System.Drawing.Size(183, 50);
             this.productsBtn.TabIndex = 3;
             this.productsBtn.Text = "Products";
             this.productsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,9 +243,9 @@
             this.transactionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.transactionBtn.Location = new System.Drawing.Point(0, 397);
             this.transactionBtn.Name = "transactionBtn";
-            this.transactionBtn.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.transactionBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.transactionBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.transactionBtn.Size = new System.Drawing.Size(204, 50);
+            this.transactionBtn.Size = new System.Drawing.Size(183, 50);
             this.transactionBtn.TabIndex = 6;
             this.transactionBtn.Text = "Transaction";
             this.transactionBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,13 +262,23 @@
             this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.expandPanel.Location = new System.Drawing.Point(45, 0);
             this.expandPanel.Name = "expandPanel";
-            this.expandPanel.Size = new System.Drawing.Size(10, 561);
+            this.expandPanel.Size = new System.Drawing.Size(183, 561);
             this.expandPanel.TabIndex = 8;
             // 
-            // sPan_timer
+            // SPan_timer
             // 
-            this.sPan_timer.Interval = 25;
-            this.sPan_timer.Tick += new System.EventHandler(this.sPan_timer_Tick);
+            this.SPan_timer.Interval = 25;
+            this.SPan_timer.Tick += new System.EventHandler(this.SPan_timer_Tick);
+            // 
+            // UserLogin1
+            // 
+            this.UserLogin1.AutoSize = true;
+            this.UserLogin1.BackColor = System.Drawing.Color.LightGray;
+            this.UserLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserLogin1.Location = new System.Drawing.Point(0, 0);
+            this.UserLogin1.Name = "UserLogin1";
+            this.UserLogin1.Size = new System.Drawing.Size(963, 561);
+            this.UserLogin1.TabIndex = 0;
             // 
             // billingSystemMain
             // 
@@ -287,7 +286,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 561);
             this.Controls.Add(this.expandPanel);
-            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.logoPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 600);
@@ -295,8 +294,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillingSystem";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.mainPanel.ResumeLayout(false);
-            this.mainPanel.PerformLayout();
+            this.MainPanel.ResumeLayout(false);
+            this.MainPanel.PerformLayout();
             this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -309,7 +308,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button userBtn;
         private System.Windows.Forms.Button transactionBtn;
         private System.Windows.Forms.Button inventoryBtn;
@@ -323,8 +322,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button humMenuLeftBtn;
         private System.Windows.Forms.Panel expandPanel;
-        private UserLogin userLogin1;
-        private System.Windows.Forms.Timer sPan_timer;
+        private UserLogin UserLogin1;
+        private System.Windows.Forms.Timer SPan_timer;
     }
 }
 

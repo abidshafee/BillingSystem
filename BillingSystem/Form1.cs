@@ -34,17 +34,17 @@ namespace BillingSystem
         // Animation for slider animation
         private void humMenuLeftBtn_Click(object sender, EventArgs e)
         {
-            sPan_timer.Start();
+            SPan_timer.Start();
         }
         // timer containing anim code for sliding manu
-        private void sPan_timer_Tick(object sender, EventArgs e)
+        private void SPan_timer_Tick(object sender, EventArgs e)
         {
             if (hiddenPan)
             {
                 expandPanel.Width += 25;
                 if (expandPanel.Width >= hiddenPanelWidth)
                 {
-                    sPan_timer.Stop();
+                    SPan_timer.Stop();
                     hiddenPan = false;
                     this.Refresh();
                 }
@@ -54,7 +54,7 @@ namespace BillingSystem
                 expandPanel.Width -= 25;
                 if (expandPanel.Width <= 0)
                 {
-                    sPan_timer.Stop();
+                    SPan_timer.Stop();
                     hiddenPan = true;
                     this.Refresh();
                 }

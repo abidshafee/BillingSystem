@@ -6,6 +6,26 @@ namespace BillingSystem
     public partial class billingSystemMain : Form
     {
 
+        static billingSystemMain BS_Obj;
+
+        public static billingSystemMain Instance
+        {
+            get
+            {
+                if(BS_Obj == null)
+                {
+                    BS_Obj = new billingSystemMain();
+                }return BS_Obj;
+            }
+        }
+
+        // creating MainPanel instance so that it can be accessed from other class
+       public Panel MainPanel_Instance
+        {
+            get {return MainPanel;}
+            set {MainPanel = value;}
+        }
+
         /* public const int WM_NCLBUTTONDOWN = 0xA1;
          public const int HT_CAPTION = 0x2;
 
@@ -21,13 +41,14 @@ namespace BillingSystem
         public billingSystemMain()
         {
             InitializeComponent();
-            hiddenPanelWidth = 205;
+            hiddenPanelWidth = 180;
             hiddenPan = true;
             expandPanel.Width = 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            BS_Obj = this;
             
         }
         // calling timer in the button, bcoz timer holds the requited -
@@ -41,7 +62,7 @@ namespace BillingSystem
         {
             if (hiddenPan)
             {
-                expandPanel.Width += 25;
+                expandPanel.Width += 10;
                 if (expandPanel.Width >= hiddenPanelWidth)
                 {
                     SPan_timer.Stop();
@@ -51,7 +72,7 @@ namespace BillingSystem
             }
             else
             {
-                expandPanel.Width -= 25;
+                expandPanel.Width -= 10;
                 if (expandPanel.Width <= 0)
                 {
                     SPan_timer.Stop();
@@ -76,7 +97,7 @@ namespace BillingSystem
                 UserLogin.Instance.BringToFront();
                 SPan_timer.Start();
             }
-        }
+        }// end of userBtn_Click
 
         private void categoryBtn_Click(object sender, EventArgs e)
         {
@@ -108,6 +129,11 @@ namespace BillingSystem
                 Products.Instance.BringToFront();
                 SPan_timer.Start();
             }
+        }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+            //null
         }
 
         // private void pictureBox1_Click(object sender, EventArgs e)

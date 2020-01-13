@@ -32,12 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(billingSystemMain));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.logoPanel = new System.Windows.Forms.Panel();
-            this.humMenuLeftBtn = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userBtn = new System.Windows.Forms.Button();
             this.inventoryBtn = new System.Windows.Forms.Button();
             this.categoryBtn = new System.Windows.Forms.Button();
@@ -45,13 +39,21 @@
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
             this.SPan_timer = new System.Windows.Forms.Timer(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.humMenuLeftBtn = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.logoPanel.SuspendLayout();
+            this.expandPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.expandPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -63,6 +65,7 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(963, 561);
             this.MainPanel.TabIndex = 2;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
             // logoPanel
             // 
@@ -79,85 +82,6 @@
             this.logoPanel.Size = new System.Drawing.Size(45, 561);
             this.logoPanel.TabIndex = 7;
             // 
-            // humMenuLeftBtn
-            // 
-            this.humMenuLeftBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuLeftBtn.BackgroundImage")));
-            this.humMenuLeftBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.humMenuLeftBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.humMenuLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.humMenuLeftBtn.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.humMenuLeftBtn.Location = new System.Drawing.Point(0, 0);
-            this.humMenuLeftBtn.Name = "humMenuLeftBtn";
-            this.humMenuLeftBtn.Size = new System.Drawing.Size(45, 42);
-            this.humMenuLeftBtn.TabIndex = 7;
-            this.humMenuLeftBtn.UseVisualStyleBackColor = true;
-            this.humMenuLeftBtn.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(-2, 397);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(-2, 344);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(-2, 289);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 235);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 186);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
-            // 
             // userBtn
             // 
             this.userBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -167,6 +91,7 @@
             this.userBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.userBtn.Location = new System.Drawing.Point(0, 185);
+            this.userBtn.Margin = new System.Windows.Forms.Padding(0);
             this.userBtn.Name = "userBtn";
             this.userBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.userBtn.Size = new System.Drawing.Size(205, 50);
@@ -254,6 +179,8 @@
             // expandPanel
             // 
             this.expandPanel.BackColor = System.Drawing.SystemColors.GrayText;
+            this.expandPanel.Controls.Add(this.label1);
+            this.expandPanel.Controls.Add(this.linkLabel1);
             this.expandPanel.Controls.Add(this.transactionBtn);
             this.expandPanel.Controls.Add(this.productsBtn);
             this.expandPanel.Controls.Add(this.categoryBtn);
@@ -262,13 +189,120 @@
             this.expandPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.expandPanel.Location = new System.Drawing.Point(45, 0);
             this.expandPanel.Name = "expandPanel";
-            this.expandPanel.Size = new System.Drawing.Size(205, 561);
+            this.expandPanel.Size = new System.Drawing.Size(180, 561);
             this.expandPanel.TabIndex = 8;
             // 
             // SPan_timer
             // 
-            this.SPan_timer.Interval = 25;
+            this.SPan_timer.Interval = 10;
             this.SPan_timer.Tick += new System.EventHandler(this.SPan_timer_Tick);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.Control;
+            this.linkLabel1.Location = new System.Drawing.Point(24, 540);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(102, 14);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Md. Shafekul Abid";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(24, 525);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 14);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Developed By";
+            // 
+            // humMenuLeftBtn
+            // 
+            this.humMenuLeftBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("humMenuLeftBtn.BackgroundImage")));
+            this.humMenuLeftBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.humMenuLeftBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.humMenuLeftBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.humMenuLeftBtn.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.humMenuLeftBtn.Location = new System.Drawing.Point(0, 0);
+            this.humMenuLeftBtn.Name = "humMenuLeftBtn";
+            this.humMenuLeftBtn.Size = new System.Drawing.Size(45, 42);
+            this.humMenuLeftBtn.TabIndex = 7;
+            this.humMenuLeftBtn.UseVisualStyleBackColor = true;
+            this.humMenuLeftBtn.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_transaction_list_36;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox5.Location = new System.Drawing.Point(-2, 397);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_in_inventory_36;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(-2, 344);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_basket_36;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 289);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_opened_folder_36;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 235);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 186);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
             // billingSystemMain
             // 
@@ -285,12 +319,13 @@
             this.Text = "BillingSystem";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.logoPanel.ResumeLayout(false);
+            this.expandPanel.ResumeLayout(false);
+            this.expandPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.expandPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -311,6 +346,8 @@
         private System.Windows.Forms.Button humMenuLeftBtn;
         private System.Windows.Forms.Panel expandPanel;
         private System.Windows.Forms.Timer SPan_timer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

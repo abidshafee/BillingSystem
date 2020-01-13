@@ -63,6 +63,16 @@ namespace BillingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_arrow_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-arrow-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_basket_36 {
             get {
                 object obj = ResourceManager.GetObject("icons8-basket-36", resourceCulture);
@@ -86,6 +96,16 @@ namespace BillingSystem.Properties {
         internal static System.Drawing.Bitmap icons8_lock_208 {
             get {
                 object obj = ResourceManager.GetObject("icons8-lock-208", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_login_as_user_150 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-login-as-user-150", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

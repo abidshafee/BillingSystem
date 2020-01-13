@@ -37,5 +37,20 @@ namespace BillingSystem
         {
 
         }
+
+        private void SinUpBtn_Click(object sender, EventArgs e)
+        {
+            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.ContainsKey("SignUp"))
+            {
+                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(SignUp.Instance);
+                SignUp.Instance.Dock = DockStyle.Fill;
+                SignUp.Instance.BringToFront();
+                
+            }
+            else
+            {
+                SignUp.Instance.BringToFront();
+            }
+        }
     }
 }

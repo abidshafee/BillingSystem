@@ -10,32 +10,27 @@ using System.Windows.Forms;
 
 namespace BillingSystem
 {
-    public partial class UserLogin : UserControl
+    public partial class Products : UserControl
     {
-        private static UserLogin UL_instance; // an instance variable of UserLogin class type
+        private static Products Pr_instance; // an instance variable of UserLogin class type
 
         // creating an instance of UserLogin class
         // so that we can access this instance from other class
-        public static UserLogin Instance
+        public static Products Instance
         {
             get
             {
-                if (UL_instance == null)
+                if (Pr_instance == null)
                 {
-                    UL_instance = new UserLogin();
+                    Pr_instance = new Products();
                 }
-                return UL_instance;
+                return Pr_instance;
             }
         }
 
-        public UserLogin()
+        public Products()
         {
             InitializeComponent();
-        }
-
-        private void UserLogin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

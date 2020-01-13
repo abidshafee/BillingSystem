@@ -11,7 +11,7 @@ namespace BillingSystem
 
          [DllImportAttribute("user32.dll")]
          public static extern int SendMessage(IntPtr hWnd,
-                          int Msg, int wParam, int lParam);
+                          int Msg, intwParam, int lParam);
          [DllImportAttribute("user32.dll")]
          public static extern bool ReleaseCapture();
          */
@@ -28,7 +28,7 @@ namespace BillingSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            
         }
         // calling timer in the button, bcoz timer holds the requited -
         // Animation for slider animation
@@ -74,6 +74,38 @@ namespace BillingSystem
             else
             {
                 UserLogin.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+        }
+
+        private void categoryBtn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(Category.Instance))
+            {
+                MainPanel.Controls.Add(Category.Instance);
+                Category.Instance.Dock = DockStyle.Fill;
+                Category.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+            else
+            {
+                Category.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+        }
+
+        private void productsBtn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(Products.Instance))
+            {
+                MainPanel.Controls.Add(Products.Instance);
+                Products.Instance.Dock = DockStyle.Fill;
+                Products.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+            else
+            {
+                Products.Instance.BringToFront();
                 SPan_timer.Start();
             }
         }

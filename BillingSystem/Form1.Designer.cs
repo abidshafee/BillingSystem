@@ -45,8 +45,6 @@
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
             this.SPan_timer = new System.Windows.Forms.Timer(this.components);
-            this.UserLogin1 = new BillingSystem.UserLogin();
-            this.MainPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -59,7 +57,6 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.Silver;
-            this.MainPanel.Controls.Add(this.UserLogin1);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.ForeColor = System.Drawing.SystemColors.Menu;
             this.MainPanel.Location = new System.Drawing.Point(45, 0);
@@ -214,6 +211,7 @@
             this.categoryBtn.Text = "Category";
             this.categoryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.categoryBtn.UseVisualStyleBackColor = true;
+            this.categoryBtn.Click += new System.EventHandler(this.categoryBtn_Click);
             // 
             // productsBtn
             // 
@@ -233,6 +231,7 @@
             this.productsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.productsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.productsBtn.UseVisualStyleBackColor = true;
+            this.productsBtn.Click += new System.EventHandler(this.productsBtn_Click);
             // 
             // transactionBtn
             // 
@@ -271,15 +270,6 @@
             this.SPan_timer.Interval = 25;
             this.SPan_timer.Tick += new System.EventHandler(this.SPan_timer_Tick);
             // 
-            // UserLogin1
-            // 
-            this.UserLogin1.AutoSize = true;
-            this.UserLogin1.BackColor = System.Drawing.Color.LightGray;
-            this.UserLogin1.Location = new System.Drawing.Point(248, 3);
-            this.UserLogin1.Name = "UserLogin1";
-            this.UserLogin1.Size = new System.Drawing.Size(681, 462);
-            this.UserLogin1.TabIndex = 0;
-            // 
             // billingSystemMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,8 +284,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillingSystem";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.MainPanel.ResumeLayout(false);
-            this.MainPanel.PerformLayout();
             this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -322,7 +310,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button humMenuLeftBtn;
         private System.Windows.Forms.Panel expandPanel;
-        private UserLogin UserLogin1;
         private System.Windows.Forms.Timer SPan_timer;
     }
 }

@@ -47,11 +47,14 @@
             this.userNameTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.userNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.userNameTextBox.Location = new System.Drawing.Point(381, 311);
+            this.userNameTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.userNameTextBox.Location = new System.Drawing.Point(379, 311);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(200, 19);
             this.userNameTextBox.TabIndex = 2;
+            this.userNameTextBox.Text = "User Name / Email";
+            this.userNameTextBox.TextChanged += new System.EventHandler(this.userNameTextBox_TextChanged);
+            this.userNameTextBox.MouseEnter += new System.EventHandler(this.userNameTextBox_MouseEnter);
             // 
             // textBox1
             // 
@@ -59,8 +62,8 @@
             this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(380, 362);
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.Location = new System.Drawing.Point(379, 362);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(200, 19);
@@ -103,7 +106,7 @@
             this.LogInlabel.AutoSize = true;
             this.LogInlabel.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogInlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LogInlabel.Location = new System.Drawing.Point(426, 261);
+            this.LogInlabel.Location = new System.Drawing.Point(422, 261);
             this.LogInlabel.Name = "LogInlabel";
             this.LogInlabel.Size = new System.Drawing.Size(114, 23);
             this.LogInlabel.TabIndex = 7;
@@ -139,7 +142,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::BillingSystem.Properties.Resources.icons8_login_as_user_150;
-            this.pictureBox1.Location = new System.Drawing.Point(409, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(407, 134);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

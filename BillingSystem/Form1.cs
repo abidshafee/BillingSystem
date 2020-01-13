@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BillingSystem
 {
@@ -62,7 +63,7 @@ namespace BillingSystem
         {
             if (hiddenPan)
             {
-                expandPanel.Width += 10;
+                expandPanel.Width += 20;
                 if (expandPanel.Width >= hiddenPanelWidth)
                 {
                     SPan_timer.Stop();
@@ -72,7 +73,7 @@ namespace BillingSystem
             }
             else
             {
-                expandPanel.Width -= 10;
+                expandPanel.Width = 0;
                 if (expandPanel.Width <= 0)
                 {
                     SPan_timer.Stop();
@@ -134,6 +135,25 @@ namespace BillingSystem
         private void MainPanel_Paint(object sender, PaintEventArgs e)
         {
             //null
+        }
+
+        private void BgLoginBtn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(UserLogin.Instance))
+            {
+                MainPanel.Controls.Add(UserLogin.Instance);
+                UserLogin.Instance.Dock = DockStyle.Fill;
+                UserLogin.Instance.BringToFront();
+            }
+            else
+            {
+                UserLogin.Instance.BringToFront();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         // private void pictureBox1_Click(object sender, EventArgs e)

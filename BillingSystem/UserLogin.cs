@@ -52,5 +52,15 @@ namespace BillingSystem
                 SignUp.Instance.BringToFront();
             }
         }
+
+        private void userNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userNameTextBox_MouseEnter(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

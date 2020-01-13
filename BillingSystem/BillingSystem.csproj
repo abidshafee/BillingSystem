@@ -78,6 +78,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\DataAccessClass.cs" />
+    <Compile Include="Resources\GetterSetterForUserTable.cs" />
     <Compile Include="SignUp.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +171,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-login-as-user-150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillingSystem_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillingSystem_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-arrow-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillingSystemBg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

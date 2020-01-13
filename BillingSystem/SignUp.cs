@@ -60,5 +60,10 @@ namespace BillingSystem
         {
             billingSystemMain.Instance.MainPanel_Instance.Controls["UserLogin"].BringToFront();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            billingSystemMain.Instance.MainPanel_Instance.Controls.Clear();
+        }
     }
 }

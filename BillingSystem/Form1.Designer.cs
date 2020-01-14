@@ -37,20 +37,17 @@
             this.productsBtn = new System.Windows.Forms.Button();
             this.transactionBtn = new System.Windows.Forms.Button();
             this.expandPanel = new System.Windows.Forms.Panel();
-            this.SPan_timer = new System.Windows.Forms.Timer(this.components);
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.SPan_timer = new System.Windows.Forms.Timer(this.components);
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.BgLoginBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.humMenuLeftBtn = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.mainUserControl1 = new BillingSystem.MainUserControl();
             this.logoPanel.SuspendLayout();
             this.expandPanel.SuspendLayout();
             this.MainPanel.SuspendLayout();
@@ -186,10 +183,17 @@
             this.expandPanel.Size = new System.Drawing.Size(180, 561);
             this.expandPanel.TabIndex = 8;
             // 
-            // SPan_timer
+            // label1
             // 
-            this.SPan_timer.Interval = 20;
-            this.SPan_timer.Tick += new System.EventHandler(this.SPan_timer_Tick);
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(24, 525);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 14);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Developed By";
             // 
             // linkLabel1
             // 
@@ -207,27 +211,16 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Md. Shafekul Abid";
             // 
-            // label1
+            // SPan_timer
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(24, 525);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 14);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Developed By";
+            this.SPan_timer.Interval = 20;
+            this.SPan_timer.Tick += new System.EventHandler(this.SPan_timer_Tick);
             // 
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.Silver;
-            this.MainPanel.BackgroundImage = global::BillingSystem.Properties.Resources.BillingSystemBg;
             this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MainPanel.Controls.Add(this.richTextBox1);
-            this.MainPanel.Controls.Add(this.BgLoginBtn);
-            this.MainPanel.Controls.Add(this.label3);
-            this.MainPanel.Controls.Add(this.label2);
+            this.MainPanel.Controls.Add(this.mainUserControl1);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.ForeColor = System.Drawing.SystemColors.Menu;
             this.MainPanel.Location = new System.Drawing.Point(45, 0);
@@ -235,44 +228,6 @@
             this.MainPanel.Size = new System.Drawing.Size(963, 561);
             this.MainPanel.TabIndex = 2;
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
-            // 
-            // BgLoginBtn
-            // 
-            this.BgLoginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BgLoginBtn.BackColor = System.Drawing.Color.GhostWhite;
-            this.BgLoginBtn.FlatAppearance.BorderSize = 0;
-            this.BgLoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BgLoginBtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BgLoginBtn.ForeColor = System.Drawing.Color.Black;
-            this.BgLoginBtn.Location = new System.Drawing.Point(826, 511);
-            this.BgLoginBtn.Name = "BgLoginBtn";
-            this.BgLoginBtn.Size = new System.Drawing.Size(125, 40);
-            this.BgLoginBtn.TabIndex = 9;
-            this.BgLoginBtn.Text = "Let\'s Get Started!";
-            this.BgLoginBtn.UseVisualStyleBackColor = false;
-            this.BgLoginBtn.Click += new System.EventHandler(this.BgLoginBtn_Click);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(897, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "v1.0 Beta";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(581, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(379, 28);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Wellcome to Billing System App";
             // 
             // humMenuLeftBtn
             // 
@@ -353,19 +308,14 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.humMenuLeftBtn_Click);
             // 
-            // richTextBox1
+            // mainUserControl1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.BackColor = System.Drawing.Color.Silver;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(740, 40);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(151, 89);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "This Software is developed \nto manage and account \nProducts inventory and \ntransa" +
-    "ction for any \nlarge business organization";
+            this.mainUserControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.mainUserControl1.Name = "mainUserControl1";
+            this.mainUserControl1.Size = new System.Drawing.Size(963, 561);
+            this.mainUserControl1.TabIndex = 0;
             // 
             // billingSystemMain
             // 
@@ -385,7 +335,6 @@
             this.expandPanel.ResumeLayout(false);
             this.expandPanel.PerformLayout();
             this.MainPanel.ResumeLayout(false);
-            this.MainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -413,10 +362,7 @@
         private System.Windows.Forms.Timer SPan_timer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button BgLoginBtn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private MainUserControl mainUserControl1;
     }
 }
 

@@ -62,5 +62,26 @@ namespace BillingSystem
         {
            
         }
+
+        private void home_Click(object sender, EventArgs e)
+        {
+            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.Contains(MainUserControl.Instance))
+            {
+                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
+                MainUserControl.Instance.Dock = DockStyle.Fill;
+                MainUserControl.Instance.BringToFront();
+            }
+            else
+            {
+                MainUserControl.Instance.BringToFront();
+            }
+        }
+
+        private void SUBackBtn_Click(object sender, EventArgs e)
+        {
+            billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
+            MainUserControl.Instance.Dock = DockStyle.Fill;
+            MainUserControl.Instance.BringToFront();
+        }
     }
 }

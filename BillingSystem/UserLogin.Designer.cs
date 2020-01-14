@@ -32,10 +32,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.SinUpBtn = new System.Windows.Forms.Button();
-            this.LogInlabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginPicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Home = new System.Windows.Forms.Button();
+            this.LogInSloganLabel = new System.Windows.Forms.Label();
+            this.LoginSloganLabel2 = new System.Windows.Forms.Label();
+            this.LoginSloganTxBx = new System.Windows.Forms.TextBox();
+            this.SUBackBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,18 +104,6 @@
             this.SinUpBtn.UseVisualStyleBackColor = false;
             this.SinUpBtn.Click += new System.EventHandler(this.SinUpBtn_Click);
             // 
-            // LogInlabel
-            // 
-            this.LogInlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.LogInlabel.AutoSize = true;
-            this.LogInlabel.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogInlabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LogInlabel.Location = new System.Drawing.Point(422, 261);
-            this.LogInlabel.Name = "LogInlabel";
-            this.LogInlabel.Size = new System.Drawing.Size(114, 23);
-            this.LogInlabel.TabIndex = 7;
-            this.LogInlabel.Text = "User Login";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -142,12 +134,76 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::BillingSystem.Properties.Resources.icons8_login_as_user_150;
-            this.pictureBox1.Location = new System.Drawing.Point(407, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(407, 153);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // Home
+            // 
+            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Home.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_home_page_50;
+            this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Home.FlatAppearance.BorderSize = 0;
+            this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Home.Location = new System.Drawing.Point(910, 20);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(27, 27);
+            this.Home.TabIndex = 18;
+            this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.home_Click);
+            // 
+            // LogInSloganLabel
+            // 
+            this.LogInSloganLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LogInSloganLabel.AutoSize = true;
+            this.LogInSloganLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogInSloganLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LogInSloganLabel.Location = new System.Drawing.Point(320, 31);
+            this.LogInSloganLabel.Name = "LogInSloganLabel";
+            this.LogInSloganLabel.Size = new System.Drawing.Size(105, 19);
+            this.LogInSloganLabel.TabIndex = 19;
+            this.LogInSloganLabel.Text = "Please Login";
+            // 
+            // LoginSloganLabel2
+            // 
+            this.LoginSloganLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LoginSloganLabel2.AutoSize = true;
+            this.LoginSloganLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginSloganLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LoginSloganLabel2.Location = new System.Drawing.Point(425, 31);
+            this.LoginSloganLabel2.Name = "LoginSloganLabel2";
+            this.LoginSloganLabel2.Size = new System.Drawing.Size(154, 19);
+            this.LoginSloganLabel2.TabIndex = 19;
+            this.LoginSloganLabel2.Text = "To Use This Product!";
+            // 
+            // LoginSloganTxBx
+            // 
+            this.LoginSloganTxBx.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LoginSloganTxBx.BackColor = System.Drawing.Color.LightGray;
+            this.LoginSloganTxBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LoginSloganTxBx.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginSloganTxBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LoginSloganTxBx.Location = new System.Drawing.Point(349, 53);
+            this.LoginSloganTxBx.Name = "LoginSloganTxBx";
+            this.LoginSloganTxBx.Size = new System.Drawing.Size(230, 14);
+            this.LoginSloganTxBx.TabIndex = 20;
+            this.LoginSloganTxBx.Text = "Please Signup if you don\'t have your Login";
+            // 
+            // SUBackBtn
+            // 
+            this.SUBackBtn.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_back_arrow_64;
+            this.SUBackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SUBackBtn.FlatAppearance.BorderSize = 0;
+            this.SUBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SUBackBtn.Location = new System.Drawing.Point(18, 17);
+            this.SUBackBtn.Name = "SUBackBtn";
+            this.SUBackBtn.Size = new System.Drawing.Size(30, 30);
+            this.SUBackBtn.TabIndex = 21;
+            this.SUBackBtn.UseVisualStyleBackColor = true;
+            this.SUBackBtn.Click += new System.EventHandler(this.SUBackBtn_Click);
             // 
             // UserLogin
             // 
@@ -155,7 +211,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.Controls.Add(this.LogInlabel);
+            this.Controls.Add(this.SUBackBtn);
+            this.Controls.Add(this.LoginSloganTxBx);
+            this.Controls.Add(this.LoginSloganLabel2);
+            this.Controls.Add(this.LogInSloganLabel);
+            this.Controls.Add(this.Home);
             this.Controls.Add(this.SinUpBtn);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.textBox1);
@@ -183,6 +243,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Button SinUpBtn;
-        private System.Windows.Forms.Label LogInlabel;
+        private System.Windows.Forms.Button Home;
+        private System.Windows.Forms.Label LogInSloganLabel;
+        private System.Windows.Forms.Label LoginSloganLabel2;
+        private System.Windows.Forms.TextBox LoginSloganTxBx;
+        private System.Windows.Forms.Button SUBackBtn;
     }
 }

@@ -118,7 +118,7 @@ namespace BillingSystem
             }
             else
             {
-                MessageBox.Show("Please input fields correctly!");
+                MessageBox.Show("Please input all fields correctly!");
             }
             
            

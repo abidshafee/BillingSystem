@@ -110,7 +110,7 @@ namespace BillingSystem.Resources
                 cmd.Parameters.AddWithValue("@UserType", updt.UserType);
                 cmd.Parameters.AddWithValue("@AddedDate", updt.AddedDate);
                 cmd.Parameters.AddWithValue("@AddedBy", updt.AddedBy);
-                cmd.Parameters.AddWithValue("@ID", updt.id);
+                //cmd.Parameters.AddWithValue("@ID", updt.id);
 
                 conn.Open();
                 int rows = cmd.ExecuteNonQuery();

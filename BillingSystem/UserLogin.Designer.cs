@@ -32,14 +32,17 @@
             this.PassTextBox = new System.Windows.Forms.TextBox();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.SinUpBtn = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.loginPicbox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Home = new System.Windows.Forms.Button();
             this.LogInSloganLabel = new System.Windows.Forms.Label();
             this.LoginSloganLabel2 = new System.Windows.Forms.Label();
             this.LoginSloganTxBx = new System.Windows.Forms.TextBox();
             this.SUBackBtn = new System.Windows.Forms.Button();
+            this.Home = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.loginPicbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.UserTypeComboBox = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,7 +55,7 @@
             this.userNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.userNameTextBox.Location = new System.Drawing.Point(379, 311);
+            this.userNameTextBox.Location = new System.Drawing.Point(380, 273);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(200, 19);
             this.userNameTextBox.TabIndex = 2;
@@ -66,7 +69,7 @@
             this.PassTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PassTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PassTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.PassTextBox.Location = new System.Drawing.Point(379, 362);
+            this.PassTextBox.Location = new System.Drawing.Point(380, 324);
             this.PassTextBox.Name = "PassTextBox";
             this.PassTextBox.PasswordChar = '*';
             this.PassTextBox.Size = new System.Drawing.Size(200, 19);
@@ -80,7 +83,7 @@
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginBtn.Location = new System.Drawing.Point(379, 404);
+            this.LoginBtn.Location = new System.Drawing.Point(384, 415);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(84, 33);
             this.LoginBtn.TabIndex = 5;
@@ -96,64 +99,13 @@
             this.SinUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SinUpBtn.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SinUpBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SinUpBtn.Location = new System.Drawing.Point(483, 404);
+            this.SinUpBtn.Location = new System.Drawing.Point(488, 415);
             this.SinUpBtn.Name = "SinUpBtn";
             this.SinUpBtn.Size = new System.Drawing.Size(84, 33);
             this.SinUpBtn.TabIndex = 6;
             this.SinUpBtn.Text = "Sign Up";
             this.SinUpBtn.UseVisualStyleBackColor = false;
             this.SinUpBtn.Click += new System.EventHandler(this.SinUpBtn_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_password_1_36;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(317, 351);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // loginPicbox
-            // 
-            this.loginPicbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.loginPicbox.BackColor = System.Drawing.Color.Transparent;
-            this.loginPicbox.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
-            this.loginPicbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.loginPicbox.Location = new System.Drawing.Point(317, 300);
-            this.loginPicbox.Name = "loginPicbox";
-            this.loginPicbox.Size = new System.Drawing.Size(40, 40);
-            this.loginPicbox.TabIndex = 1;
-            this.loginPicbox.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::BillingSystem.Properties.Resources.icons8_login_as_user_150;
-            this.pictureBox1.Location = new System.Drawing.Point(407, 153);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 118);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Home
-            // 
-            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Home.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_home_page_50;
-            this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Home.FlatAppearance.BorderSize = 0;
-            this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Home.Location = new System.Drawing.Point(920, 12);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(27, 27);
-            this.Home.TabIndex = 18;
-            this.Home.UseVisualStyleBackColor = true;
-            this.Home.Click += new System.EventHandler(this.home_Click);
             // 
             // LogInSloganLabel
             // 
@@ -205,12 +157,91 @@
             this.SUBackBtn.UseVisualStyleBackColor = true;
             this.SUBackBtn.Click += new System.EventHandler(this.SUBackBtn_Click);
             // 
+            // Home
+            // 
+            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Home.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_home_page_50;
+            this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Home.FlatAppearance.BorderSize = 0;
+            this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Home.Location = new System.Drawing.Point(920, 12);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(27, 27);
+            this.Home.TabIndex = 18;
+            this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.home_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_checked_user_male_80;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(318, 362);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_password_1_36;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(318, 313);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // loginPicbox
+            // 
+            this.loginPicbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.loginPicbox.BackColor = System.Drawing.Color.Transparent;
+            this.loginPicbox.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
+            this.loginPicbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.loginPicbox.Location = new System.Drawing.Point(318, 262);
+            this.loginPicbox.Name = "loginPicbox";
+            this.loginPicbox.Size = new System.Drawing.Size(40, 40);
+            this.loginPicbox.TabIndex = 1;
+            this.loginPicbox.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::BillingSystem.Properties.Resources.icons8_login_as_user_150;
+            this.pictureBox1.Location = new System.Drawing.Point(401, 134);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 118);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // UserTypeComboBox
+            // 
+            this.UserTypeComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.UserTypeComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.UserTypeComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserTypeComboBox.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserTypeComboBox.FormattingEnabled = true;
+            this.UserTypeComboBox.Items.AddRange(new object[] {
+            "Admin",
+            "User"});
+            this.UserTypeComboBox.Location = new System.Drawing.Point(379, 371);
+            this.UserTypeComboBox.Name = "UserTypeComboBox";
+            this.UserTypeComboBox.Size = new System.Drawing.Size(201, 22);
+            this.UserTypeComboBox.TabIndex = 27;
+            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightGray;
+            this.Controls.Add(this.UserTypeComboBox);
             this.Controls.Add(this.SUBackBtn);
             this.Controls.Add(this.LoginSloganTxBx);
             this.Controls.Add(this.LoginSloganLabel2);
@@ -219,6 +250,7 @@
             this.Controls.Add(this.SinUpBtn);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.PassTextBox);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.userNameTextBox);
             this.Controls.Add(this.loginPicbox);
@@ -226,6 +258,7 @@
             this.Name = "UserLogin";
             this.Size = new System.Drawing.Size(963, 561);
             this.Load += new System.EventHandler(this.UserLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -248,5 +281,7 @@
         private System.Windows.Forms.Label LoginSloganLabel2;
         private System.Windows.Forms.TextBox LoginSloganTxBx;
         private System.Windows.Forms.Button SUBackBtn;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ComboBox UserTypeComboBox;
     }
 }

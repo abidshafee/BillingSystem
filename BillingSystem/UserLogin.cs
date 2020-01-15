@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BillingSystem.OtherClasses;
+using System;
 using System.Windows.Forms;
-using BillingSystem.OtherClasses;
 
 namespace BillingSystem
 {
@@ -29,8 +22,9 @@ namespace BillingSystem
             }
         }
 
+        // instanciating gettersetter and data access class
         GetterSetterForLoginForm lgin = new GetterSetterForLoginForm();
-        DataAccessForLogin dalgin = new DataAccessForLogin();
+        DataAccessForLogin DAlgin = new DataAccessForLogin();
 
         public UserLogin()
         {
@@ -42,6 +36,7 @@ namespace BillingSystem
 
         }
 
+        // loading Signup user control in the mainpanel
         private void SinUpBtn_Click(object sender, EventArgs e)
         {
             if (!billingSystemMain.Instance.MainPanel_Instance.Controls.ContainsKey("SignUp"))
@@ -49,7 +44,7 @@ namespace BillingSystem
                 billingSystemMain.Instance.MainPanel_Instance.Controls.Add(SignUp.Instance);
                 SignUp.Instance.Dock = DockStyle.Fill;
                 SignUp.Instance.BringToFront();
-                
+
             }
             else
             {
@@ -64,9 +59,10 @@ namespace BillingSystem
 
         private void userNameTextBox_MouseEnter(object sender, EventArgs e)
         {
-           
+
         }
 
+        // loding home or mainUserControl
         private void home_Click(object sender, EventArgs e)
         {
             if (!billingSystemMain.Instance.MainPanel_Instance.Controls.Contains(MainUserControl.Instance))
@@ -80,6 +76,7 @@ namespace BillingSystem
                 MainUserControl.Instance.BringToFront();
             }
         }
+
         // take user to MainUserControl or Home
         private void SUBackBtn_Click(object sender, EventArgs e)
         {
@@ -87,6 +84,7 @@ namespace BillingSystem
             MainUserControl.Instance.Dock = DockStyle.Fill;
             MainUserControl.Instance.BringToFront();
         }
+
         /*
         private bool ValidatingInput()
         {
@@ -104,15 +102,16 @@ namespace BillingSystem
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            // validating input
-            if (userNameTextBox.Text.Length != 0 && userNameTextBox.Text.IndexOf(".") != -1 && userNameTextBox.Text.IndexOf("@") != -1)
+            // validating input for empty input or if it contains '.' or '@'
+           if (userNameTextBox.Text.Length != 0) //&& userNameTextBox.Text.IndexOf(".") != -1 && userNameTextBox.Text.IndexOf("@") != -1)
             {
+                bool loginSuccess = DAlgin.IsLoginSuccess(lgin);
+
                 lgin.UserName = userNameTextBox.Text.Trim();
                 lgin.Password = PassTextBox.Text.Trim();
+                lgin.UserType = UserTypeComboBox.Text;
 
-                bool loginCheck = dalgin.IsLoginSuccess(lgin);
-
-                if (loginCheck == true)
+                if (loginSuccess == true)
                 {
                     MessageBox.Show("login Success!");
                 }
@@ -123,9 +122,8 @@ namespace BillingSystem
             }
             else
             {
-                MessageBox.Show("Username Can't be Empty!\n Or input a Valid Email Address!");
+                MessageBox.Show("Any Field Can't be left empty!\n Please input Valid entry!");
             }
-
         }
     }
 }

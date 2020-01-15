@@ -80,28 +80,50 @@ namespace BillingSystem
                 MainUserControl.Instance.BringToFront();
             }
         }
-
+        // take user to MainUserControl or Home
         private void SUBackBtn_Click(object sender, EventArgs e)
         {
             billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
             MainUserControl.Instance.Dock = DockStyle.Fill;
             MainUserControl.Instance.BringToFront();
         }
+        /*
+        private bool ValidatingInput()
+        {
+            // Confirm there is text in the control.
+            if ()
+            {
+                MessageBox.Show("Username Can't be Empty!");
+            }
+            // Confirm that there is a "." and an "@" in the email address.
+            else if (userNameTextBox.Text.IndexOf(".") == -1 || userNameTextBox.Text.IndexOf("@") == -1)
+            {
+                MessageBox.Show("Enter Valid Email Address");
+            }
+        }*/
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            lgin.UserName = userNameTextBox.Text.Trim();
-            lgin.Password = PassTextBox.Text.Trim();
-
-            bool loginCheck = dalgin.IsLoginSuccess(lgin);
-
-            if(loginCheck == true)
+            // validating input
+            if (userNameTextBox.Text.Length != 0 && userNameTextBox.Text.IndexOf(".") != -1 && userNameTextBox.Text.IndexOf("@") != -1)
             {
-                MessageBox.Show("log in Success!");
+                lgin.UserName = userNameTextBox.Text.Trim();
+                lgin.Password = PassTextBox.Text.Trim();
+
+                bool loginCheck = dalgin.IsLoginSuccess(lgin);
+
+                if (loginCheck == true)
+                {
+                    MessageBox.Show("login Success!");
+                }
+                else
+                {
+                    MessageBox.Show("Login Fail");
+                }
             }
             else
             {
-                MessageBox.Show("Login Fail");
+                MessageBox.Show("Username Can't be Empty!\n Or input a Valid Email Address!");
             }
 
         }

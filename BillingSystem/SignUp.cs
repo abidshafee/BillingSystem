@@ -84,29 +84,43 @@ namespace BillingSystem
             DateTime dateTime = DateTime.Now;
         private void SinUpBtn_Click(object sender, EventArgs e)
         {
-            //getting data from signup form
-            UT.FirstName = FirstNameTextBox.Text;
-            UT.LastName = LastNameTextBox.Text;
-            UT.Email = UsernameEmailTxtBx.Text;
-            UT.UserName = UsernameEmailTxtBx.Text;
-            UT.Password = PassTextBox.Text;
-            UT.Mobile = MobileTextBox.Text;
-            UT.Address = AddressTxtBox.Text;
-            UT.Gender = GenderComboBox.Text;
-            UT.UserType = UserTypeComboBox.Text;
-            UT.AddedDate = dateTime.ToString();
-            UT.AddedBy = 1;
-
-            // using DataAccess Class we will insert data into database
-            bool isReturnSuccess = DA.Insert(UT);
-            if(isReturnSuccess == true)
+            //validating input
+            if (FirstNameTextBox.Text.Length != 0
+                && LastNameTextBox.Text.Length != 0
+                && UsernameEmailTxtBx.Text.Length !=0
+                && PassTextBox.Text.Length !=0
+                && MobileTextBox.Text.Length !=0)
             {
-                MessageBox.Show ("SignUp Successful!\n Now Login");
+                //getting data from signup form
+                UT.FirstName = FirstNameTextBox.Text;
+                UT.LastName = LastNameTextBox.Text;
+                UT.Email = UsernameEmailTxtBx.Text;
+                UT.UserName = UsernameEmailTxtBx.Text;
+                UT.Password = PassTextBox.Text;
+                UT.Mobile = MobileTextBox.Text;
+                UT.Address = AddressTxtBox.Text;
+                UT.Gender = GenderComboBox.Text;
+                UT.UserType = UserTypeComboBox.Text;
+                UT.AddedDate = dateTime.ToString();
+                UT.AddedBy = 1;
+
+                // using DataAccess Class we will insert data into database
+                bool isReturnSuccess = DA.Insert(UT);
+                if (isReturnSuccess == true)
+                {
+                    MessageBox.Show("SignUp Successful!\n Now Login");
+                }
+                else
+                {
+                    MessageBox.Show("SignUp Process Failled!");
+                }
+
             }
             else
             {
-                MessageBox.Show("SignUp Process Failled!");
+                MessageBox.Show("Please input fields correctly!");
             }
+            
            
         }
     }

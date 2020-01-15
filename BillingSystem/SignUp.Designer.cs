@@ -324,7 +324,7 @@
             this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Home.FlatAppearance.BorderSize = 0;
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Home.Location = new System.Drawing.Point(910, 20);
+            this.Home.Location = new System.Drawing.Point(920, 12);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(27, 27);
             this.Home.TabIndex = 17;
@@ -337,7 +337,7 @@
             this.SUBackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SUBackBtn.FlatAppearance.BorderSize = 0;
             this.SUBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SUBackBtn.Location = new System.Drawing.Point(18, 17);
+            this.SUBackBtn.Location = new System.Drawing.Point(12, 12);
             this.SUBackBtn.Name = "SUBackBtn";
             this.SUBackBtn.Size = new System.Drawing.Size(30, 30);
             this.SUBackBtn.TabIndex = 16;

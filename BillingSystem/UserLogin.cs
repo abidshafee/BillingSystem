@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BillingSystem.OtherClasses;
 
 namespace BillingSystem
 {
@@ -27,6 +28,9 @@ namespace BillingSystem
                 return UL_instance;
             }
         }
+
+        GetterSetterForLoginForm lgin = new GetterSetterForLoginForm();
+        DataAccessForLogin dalgin = new DataAccessForLogin();
 
         public UserLogin()
         {
@@ -82,6 +86,24 @@ namespace BillingSystem
             billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
             MainUserControl.Instance.Dock = DockStyle.Fill;
             MainUserControl.Instance.BringToFront();
+        }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            lgin.UserName = userNameTextBox.Text.Trim();
+            lgin.Password = PassTextBox.Text.Trim();
+
+            bool loginCheck = dalgin.IsLoginSuccess(lgin);
+
+            if(loginCheck == true)
+            {
+                MessageBox.Show("log in Success!");
+            }
+            else
+            {
+                MessageBox.Show("Login Fail");
+            }
+
         }
     }
 }

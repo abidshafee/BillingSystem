@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BillingSystem.OtherClasses;
 using BillingSystem.Resources;
 
 namespace BillingSystem
@@ -106,7 +107,7 @@ namespace BillingSystem
             {
                 MessageBox.Show("SignUp Process Failled!");
             }
-
+           
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.userNameTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PassTextBox = new System.Windows.Forms.TextBox();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.SinUpBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -56,22 +56,21 @@
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(200, 19);
             this.userNameTextBox.TabIndex = 2;
-            this.userNameTextBox.Text = "User Name / Email";
             this.userNameTextBox.TextChanged += new System.EventHandler(this.userNameTextBox_TextChanged);
             this.userNameTextBox.MouseEnter += new System.EventHandler(this.userNameTextBox_MouseEnter);
             // 
-            // textBox1
+            // PassTextBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(379, 362);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(200, 19);
-            this.textBox1.TabIndex = 4;
+            this.PassTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PassTextBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.PassTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PassTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.PassTextBox.Location = new System.Drawing.Point(379, 362);
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.PasswordChar = '*';
+            this.PassTextBox.Size = new System.Drawing.Size(200, 19);
+            this.PassTextBox.TabIndex = 4;
             // 
             // LoginBtn
             // 
@@ -87,6 +86,7 @@
             this.LoginBtn.TabIndex = 5;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // SinUpBtn
             // 
@@ -148,7 +148,7 @@
             this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Home.FlatAppearance.BorderSize = 0;
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Home.Location = new System.Drawing.Point(910, 20);
+            this.Home.Location = new System.Drawing.Point(920, 12);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(27, 27);
             this.Home.TabIndex = 18;
@@ -198,7 +198,7 @@
             this.SUBackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SUBackBtn.FlatAppearance.BorderSize = 0;
             this.SUBackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SUBackBtn.Location = new System.Drawing.Point(18, 17);
+            this.SUBackBtn.Location = new System.Drawing.Point(12, 12);
             this.SUBackBtn.Name = "SUBackBtn";
             this.SUBackBtn.Size = new System.Drawing.Size(30, 30);
             this.SUBackBtn.TabIndex = 21;
@@ -218,7 +218,7 @@
             this.Controls.Add(this.Home);
             this.Controls.Add(this.SinUpBtn);
             this.Controls.Add(this.LoginBtn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PassTextBox);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.userNameTextBox);
             this.Controls.Add(this.loginPicbox);
@@ -240,7 +240,7 @@
         private System.Windows.Forms.PictureBox loginPicbox;
         private System.Windows.Forms.TextBox userNameTextBox;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PassTextBox;
         private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Button SinUpBtn;
         private System.Windows.Forms.Button Home;

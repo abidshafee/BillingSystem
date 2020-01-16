@@ -39,9 +39,9 @@ namespace BillingSystem
         // loading Signup user control in the mainpanel
         private void SinUpBtn_Click(object sender, EventArgs e)
         {
-            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.ContainsKey("SignUp"))
+            if (!billingSystemMain.Instance.MainPanelInstance.Controls.ContainsKey("SignUp"))
             {
-                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(SignUp.Instance);
+                billingSystemMain.Instance.MainPanelInstance.Controls.Add(SignUp.Instance);
                 SignUp.Instance.Dock = DockStyle.Fill;
                 SignUp.Instance.BringToFront();
 
@@ -65,9 +65,9 @@ namespace BillingSystem
         // loding home or mainUserControl
         private void home_Click(object sender, EventArgs e)
         {
-            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.Contains(MainUserControl.Instance))
+            if (!billingSystemMain.Instance.MainPanelInstance.Controls.Contains(MainUserControl.Instance))
             {
-                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
+                billingSystemMain.Instance.MainPanelInstance.Controls.Add(MainUserControl.Instance);
                 MainUserControl.Instance.Dock = DockStyle.Fill;
                 MainUserControl.Instance.BringToFront();
             }
@@ -80,7 +80,7 @@ namespace BillingSystem
         // take user to MainUserControl or Home
         private void SUBackBtn_Click(object sender, EventArgs e)
         {
-            billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
+            billingSystemMain.Instance.MainPanelInstance.Controls.Add(MainUserControl.Instance);
             MainUserControl.Instance.Dock = DockStyle.Fill;
             MainUserControl.Instance.BringToFront();
         }
@@ -107,8 +107,9 @@ namespace BillingSystem
             {
                 bool loginSuccess = DAlgin.IsLoginSuccess(lgin);
 
-                lgin.UserName = userNameTextBox.Text.Trim();
-                lgin.Password = PassTextBox.Text.Trim();
+                // assigning value to gettersetterForLoginForm properties 
+                lgin.UserName = userNameTextBox.Text;
+                lgin.Password = PassTextBox.Text;
                 lgin.UserType = UserTypeComboBox.Text;
 
                 if (loginSuccess == true)

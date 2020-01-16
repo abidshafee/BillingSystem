@@ -51,9 +51,9 @@ namespace BillingSystem
         private void MainUCLoginBtn_Click(object sender, EventArgs e)
         {
             // loading one user control on main panel from another user control
-            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.Contains(UserLogin.Instance))
+            if (!billingSystemMain.Instance.MainPanelInstance.Controls.Contains(UserLogin.Instance))
             {
-                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(UserLogin.Instance);
+                billingSystemMain.Instance.MainPanelInstance.Controls.Add(UserLogin.Instance);
                 UserLogin.Instance.Dock = DockStyle.Fill;
                 UserLogin.Instance.BringToFront();
             }

@@ -113,7 +113,7 @@
             this.LogInSloganLabel.AutoSize = true;
             this.LogInSloganLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogInSloganLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LogInSloganLabel.Location = new System.Drawing.Point(320, 31);
+            this.LogInSloganLabel.Location = new System.Drawing.Point(340, 31);
             this.LogInSloganLabel.Name = "LogInSloganLabel";
             this.LogInSloganLabel.Size = new System.Drawing.Size(105, 19);
             this.LogInSloganLabel.TabIndex = 19;
@@ -125,7 +125,7 @@
             this.LoginSloganLabel2.AutoSize = true;
             this.LoginSloganLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginSloganLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginSloganLabel2.Location = new System.Drawing.Point(425, 31);
+            this.LoginSloganLabel2.Location = new System.Drawing.Point(447, 31);
             this.LoginSloganLabel2.Name = "LoginSloganLabel2";
             this.LoginSloganLabel2.Size = new System.Drawing.Size(154, 19);
             this.LoginSloganLabel2.TabIndex = 19;
@@ -138,7 +138,7 @@
             this.LoginSloganTxBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LoginSloganTxBx.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginSloganTxBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginSloganTxBx.Location = new System.Drawing.Point(349, 53);
+            this.LoginSloganTxBx.Location = new System.Drawing.Point(371, 53);
             this.LoginSloganTxBx.Name = "LoginSloganTxBx";
             this.LoginSloganTxBx.Size = new System.Drawing.Size(230, 14);
             this.LoginSloganTxBx.TabIndex = 20;

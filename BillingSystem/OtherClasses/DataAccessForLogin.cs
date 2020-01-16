@@ -24,25 +24,25 @@ namespace BillingSystem.OtherClasses
             try
             {
                 // SQL query to check login data in UserTable
-                string sql = "SELECT * from UserTable WHERE UserName=@UserName AND Password=@Password AND UserType=@UserType";
+                string sql = "select UserName, Password, UserType from UserTable WHERE UserName=@User AND Password=@Pass AND UserType=@UType";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
-                cmd.Parameters.AddWithValue("@username", lg.UserName);
-                cmd.Parameters.AddWithValue("@password", lg.Password);
-                cmd.Parameters.AddWithValue("@UserType", lg.UserType);
+                cmd.Parameters.AddWithValue("@User", lg.UserName);
+                cmd.Parameters.AddWithValue("@Pass", lg.Password);
+                cmd.Parameters.AddWithValue("@UType", lg.UserType);
 
-                //conn.Open();
+                conn.Open();
                 //cmd.ExecuteNonQuery();
 
                 // data adapter will hold data from database temporarily
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                SqlDataAdapter dtAdapter = new SqlDataAdapter(cmd);
 
-                DataTable dataTable = new DataTable();
-                dataAdapter.Fill(dataTable);
+                DataTable dtValue = new DataTable();
+                dtAdapter.Fill(dtValue);
 
                 //checking if query successful
-                if (dataTable.Rows.Count>0)
+                if (dtValue.Rows.Count>0)
                 {
                     IsLoginSuccess = true;
                 }

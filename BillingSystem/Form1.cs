@@ -21,11 +21,13 @@ namespace BillingSystem
         }
 
         // creating MainPanel instance so that it can be accessed from other class
-       public Panel MainPanel_Instance
+       public Panel MainPanelInstance
         {
             get {return MainPanel;}
             set {MainPanel = value;}
         }
+
+        private Control currentControl;
 
         /* public const int WM_NCLBUTTONDOWN = 0xA1;
          public const int HT_CAPTION = 0x2;
@@ -170,16 +172,114 @@ namespace BillingSystem
         // {
         //    this.WindowState = FormWindowState.Minimized;
         // }
-        //Mouse down event for capturing mouse hove event
+
         /*
-         private void panel1_MouseDown(object sender, MouseEventArgs e)
-         {
-             if (e.Button == MouseButtons.Left)
-             {
-                 ReleaseCapture();
-                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-             }
-         }
+         * //Mouse down event for capturing mouse hove event
+                 private void panel1_MouseDown(object sender, MouseEventArgs e)
+                 {
+                     if (e.Button == MouseButtons.Left)
+                     {
+                         ReleaseCapture();
+                         SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                     }
+                 }
          */
+
+        // activate UserControls upon login Success
+
+        /*
+                       public class MainForm: Form {
+                       //...
+                       private Control currentControl;
+
+                           public void ChangeControl(Control newControl) {
+                               if(newControl == null) {
+                                   throw new ArgumentNullException("newControl");
+                               }
+                               if(currentControl != null) {
+                                   Me.Controls.Remove(currentControl);
+                               }
+                               Me.Controls.Add(newControl);
+                               currentControl = newControl;
+                           }
+
+                       public void ShowHomePage() {
+                           // You could use a previously created control
+                           this.ChangeControl(this.homePageControl);
+                           // Or create a new one.
+                           // this.ChangeControl(new HomePageControl());
+                           }
+                        }// End of Main Form
+
+                        public class LoginControl: Control {
+                           private void LoginButton_Click(Object sender, EventArgs e) {
+                               if(DoLogin(...)) {
+                                   ((MainForm)this.Parent).ShowHomePage()
+                               }
+                               else {
+                                   // Show some error message
+                               }
+                           }
+                        }
+                // Personally I prefer to comunicate to MainForm only via events, 
+                // and never one control to another:
+
+                        public class MainForm: Form {
+                           private Control currentControl;
+
+                           public void ChangeControl(Control newControl) {
+                               if(newControl == null) {
+                                   throw new ArgumentNullException("newControl");
+                               }
+                               if(currentControl != null) {
+                                   Me.Controls.Remove(currentControl);
+                                   // Optionally you could dispose old control
+                                   // currentControl.Dispose();
+                               }         
+                               Me.Controls.Add(newControl);
+                               currentControl = newControl;
+                           }
+
+                           // Optional generic method
+                           public void ChangeControl<TControl>() where TControl: Control, new() {
+                               this.Changecontrol(new TControl());
+                           }
+
+                           private void OnLoggedIn(Object sender, LoggedInEventArgs e) {
+                              this.ChangeControl<HomePageControl>();
+                           }
+
+                           private Login_ParentChanged(Object sender, EventArgs e) {
+                               var control = sender as LoginControl;
+                               if(control != null && control.Parent == null) {
+                                   control.LoggedIn -= OnLoggedIn;
+                                   control.ParentChanged -= Login_ParentChanged
+                               }
+                           }
+
+                           private void LogOut_Click(Object sender, EventArgs e) {
+                              var control = new LoginControl();
+                              control.LoggedIn += OnLoggedIn;
+                              this.ChangeControl(control);
+                              control.ParentChanged += Login_ParentChanged
+                           }
+                        }
+
+                        public class LoginControl: Control {
+                           public event EventHandler<LoggedInEventArgs> LoggedIn;
+
+                           private void LoginButton_Click(Object sender, EventArgs e) {
+                               if(DoLogin(...)) {
+                                   if(LoggedIn != null) {
+                                      LoggedIn(this, new LoggedInEventArgs(...))
+                                   }
+                                   else {
+                                      // Show some error message
+                                   }
+                               }
+                           }
+                        }
+
+        */
     }
 }

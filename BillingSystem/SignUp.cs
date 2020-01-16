@@ -49,9 +49,9 @@ namespace BillingSystem
         // login button on SignUp control will load the UserLogin on MainPanel
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.Contains(UserLogin.Instance))
+            if (!billingSystemMain.Instance.MainPanelInstance.Controls.Contains(UserLogin.Instance))
             {
-                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(UserLogin.Instance);
+                billingSystemMain.Instance.MainPanelInstance.Controls.Add(UserLogin.Instance);
                 UserLogin.Instance.Dock = DockStyle.Fill;
                 UserLogin.Instance.BringToFront();
             }
@@ -64,15 +64,15 @@ namespace BillingSystem
         // this click event will bring UserLogin control to front
         private void SUBackBtn_Click(object sender, EventArgs e)
         {
-            billingSystemMain.Instance.MainPanel_Instance.Controls["UserLogin"].BringToFront();
+            billingSystemMain.Instance.MainPanelInstance.Controls["UserLogin"].BringToFront();
         }
 
         private void home_Click(object sender, EventArgs e)
         {
             //billingSystemMain.Instance.MainPanel_Instance.Controls.Clear();
-            if (!billingSystemMain.Instance.MainPanel_Instance.Controls.Contains(MainUserControl.Instance))
+            if (!billingSystemMain.Instance.MainPanelInstance.Controls.Contains(MainUserControl.Instance))
             {
-                billingSystemMain.Instance.MainPanel_Instance.Controls.Add(MainUserControl.Instance);
+                billingSystemMain.Instance.MainPanelInstance.Controls.Add(MainUserControl.Instance);
                 MainUserControl.Instance.Dock = DockStyle.Fill;
                 MainUserControl.Instance.BringToFront();
             }

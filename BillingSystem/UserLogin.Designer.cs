@@ -35,15 +35,19 @@
             this.LogInSloganLabel = new System.Windows.Forms.Label();
             this.LoginSloganLabel2 = new System.Windows.Forms.Label();
             this.LoginSloganTxBx = new System.Windows.Forms.TextBox();
+            this.UserTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SUBackBtn = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.loginPicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.UserTypeComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -144,6 +148,49 @@
             this.LoginSloganTxBx.TabIndex = 20;
             this.LoginSloganTxBx.Text = "Or, Please Signup if you don\'t have your Login";
             // 
+            // UserTypeComboBox
+            // 
+            this.UserTypeComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.UserTypeComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.UserTypeComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserTypeComboBox.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserTypeComboBox.FormattingEnabled = true;
+            this.UserTypeComboBox.Items.AddRange(new object[] {
+            "Admin",
+            "User"});
+            this.UserTypeComboBox.Location = new System.Drawing.Point(379, 400);
+            this.UserTypeComboBox.Name = "UserTypeComboBox";
+            this.UserTypeComboBox.Size = new System.Drawing.Size(201, 22);
+            this.UserTypeComboBox.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(753, 528);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Developed By -";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel1.Location = new System.Drawing.Point(845, 528);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(105, 16);
+            this.linkLabel1.TabIndex = 28;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Md. Shafekul Abid";
+            // 
             // SUBackBtn
             // 
             this.SUBackBtn.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_back_arrow_64;
@@ -195,6 +242,18 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_developer_48;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(726, 525);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
             // loginPicbox
             // 
             this.loginPicbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -220,27 +279,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // UserTypeComboBox
-            // 
-            this.UserTypeComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.UserTypeComboBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.UserTypeComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserTypeComboBox.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserTypeComboBox.FormattingEnabled = true;
-            this.UserTypeComboBox.Items.AddRange(new object[] {
-            "Admin",
-            "User"});
-            this.UserTypeComboBox.Location = new System.Drawing.Point(379, 400);
-            this.UserTypeComboBox.Name = "UserTypeComboBox";
-            this.UserTypeComboBox.Size = new System.Drawing.Size(201, 22);
-            this.UserTypeComboBox.TabIndex = 27;
-            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightGray;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.UserTypeComboBox);
             this.Controls.Add(this.SUBackBtn);
             this.Controls.Add(this.LoginSloganTxBx);
@@ -253,6 +299,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.userNameTextBox);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.loginPicbox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserLogin";
@@ -260,6 +307,7 @@
             this.Load += new System.EventHandler(this.UserLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -283,5 +331,8 @@
         private System.Windows.Forms.Button SUBackBtn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ComboBox UserTypeComboBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

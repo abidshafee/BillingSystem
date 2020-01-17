@@ -55,7 +55,7 @@
             this.userNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.userNameTextBox.Location = new System.Drawing.Point(380, 273);
+            this.userNameTextBox.Location = new System.Drawing.Point(380, 302);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(200, 19);
             this.userNameTextBox.TabIndex = 2;
@@ -69,7 +69,7 @@
             this.PassTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PassTextBox.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PassTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.PassTextBox.Location = new System.Drawing.Point(380, 324);
+            this.PassTextBox.Location = new System.Drawing.Point(380, 353);
             this.PassTextBox.Name = "PassTextBox";
             this.PassTextBox.PasswordChar = '*';
             this.PassTextBox.Size = new System.Drawing.Size(200, 19);
@@ -83,7 +83,7 @@
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginBtn.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginBtn.Location = new System.Drawing.Point(384, 415);
+            this.LoginBtn.Location = new System.Drawing.Point(384, 444);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(84, 33);
             this.LoginBtn.TabIndex = 5;
@@ -99,7 +99,7 @@
             this.SinUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SinUpBtn.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SinUpBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SinUpBtn.Location = new System.Drawing.Point(488, 415);
+            this.SinUpBtn.Location = new System.Drawing.Point(488, 444);
             this.SinUpBtn.Name = "SinUpBtn";
             this.SinUpBtn.Size = new System.Drawing.Size(84, 33);
             this.SinUpBtn.TabIndex = 6;
@@ -113,11 +113,11 @@
             this.LogInSloganLabel.AutoSize = true;
             this.LogInSloganLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogInSloganLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LogInSloganLabel.Location = new System.Drawing.Point(340, 31);
+            this.LogInSloganLabel.Location = new System.Drawing.Point(413, 205);
             this.LogInSloganLabel.Name = "LogInSloganLabel";
-            this.LogInSloganLabel.Size = new System.Drawing.Size(105, 19);
+            this.LogInSloganLabel.Size = new System.Drawing.Size(114, 19);
             this.LogInSloganLabel.TabIndex = 19;
-            this.LogInSloganLabel.Text = "Please Login";
+            this.LogInSloganLabel.Text = "PLEASE LOGIN";
             // 
             // LoginSloganLabel2
             // 
@@ -125,24 +125,24 @@
             this.LoginSloganLabel2.AutoSize = true;
             this.LoginSloganLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginSloganLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginSloganLabel2.Location = new System.Drawing.Point(447, 31);
+            this.LoginSloganLabel2.Location = new System.Drawing.Point(384, 230);
             this.LoginSloganLabel2.Name = "LoginSloganLabel2";
-            this.LoginSloganLabel2.Size = new System.Drawing.Size(154, 19);
+            this.LoginSloganLabel2.Size = new System.Drawing.Size(172, 19);
             this.LoginSloganLabel2.TabIndex = 19;
-            this.LoginSloganLabel2.Text = "To Use This Product!";
+            this.LoginSloganLabel2.Text = "TO USE THIS PRODUCT!";
             // 
             // LoginSloganTxBx
             // 
             this.LoginSloganTxBx.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LoginSloganTxBx.BackColor = System.Drawing.Color.LightGray;
             this.LoginSloganTxBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LoginSloganTxBx.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginSloganTxBx.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginSloganTxBx.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LoginSloganTxBx.Location = new System.Drawing.Point(371, 53);
+            this.LoginSloganTxBx.Location = new System.Drawing.Point(345, 255);
             this.LoginSloganTxBx.Name = "LoginSloganTxBx";
-            this.LoginSloganTxBx.Size = new System.Drawing.Size(230, 14);
+            this.LoginSloganTxBx.Size = new System.Drawing.Size(250, 14);
             this.LoginSloganTxBx.TabIndex = 20;
-            this.LoginSloganTxBx.Text = "Please Signup if you don\'t have your Login";
+            this.LoginSloganTxBx.Text = "Or, Please Signup if you don\'t have your Login";
             // 
             // SUBackBtn
             // 
@@ -177,7 +177,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_checked_user_male_80;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(318, 362);
+            this.pictureBox3.Location = new System.Drawing.Point(318, 391);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.TabIndex = 3;
@@ -189,7 +189,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_password_1_36;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(318, 313);
+            this.pictureBox2.Location = new System.Drawing.Point(318, 342);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 3;
@@ -201,7 +201,7 @@
             this.loginPicbox.BackColor = System.Drawing.Color.Transparent;
             this.loginPicbox.BackgroundImage = global::BillingSystem.Properties.Resources.icons8_male_user_36;
             this.loginPicbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.loginPicbox.Location = new System.Drawing.Point(318, 262);
+            this.loginPicbox.Location = new System.Drawing.Point(318, 291);
             this.loginPicbox.Name = "loginPicbox";
             this.loginPicbox.Size = new System.Drawing.Size(40, 40);
             this.loginPicbox.TabIndex = 1;
@@ -213,7 +213,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::BillingSystem.Properties.Resources.icons8_login_as_user_150;
-            this.pictureBox1.Location = new System.Drawing.Point(401, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(398, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,7 +230,7 @@
             this.UserTypeComboBox.Items.AddRange(new object[] {
             "Admin",
             "User"});
-            this.UserTypeComboBox.Location = new System.Drawing.Point(379, 371);
+            this.UserTypeComboBox.Location = new System.Drawing.Point(379, 400);
             this.UserTypeComboBox.Name = "UserTypeComboBox";
             this.UserTypeComboBox.Size = new System.Drawing.Size(201, 22);
             this.UserTypeComboBox.TabIndex = 27;

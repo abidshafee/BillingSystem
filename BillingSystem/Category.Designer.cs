@@ -33,13 +33,15 @@
             // 
             // Ct_label1
             // 
+            this.Ct_label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Ct_label1.AutoSize = true;
-            this.Ct_label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ct_label1.Location = new System.Drawing.Point(12, 9);
+            this.Ct_label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ct_label1.ForeColor = System.Drawing.Color.Black;
+            this.Ct_label1.Location = new System.Drawing.Point(400, 12);
             this.Ct_label1.Name = "Ct_label1";
-            this.Ct_label1.Size = new System.Drawing.Size(79, 21);
+            this.Ct_label1.Size = new System.Drawing.Size(93, 19);
             this.Ct_label1.TabIndex = 0;
-            this.Ct_label1.Text = "Category";
+            this.Ct_label1.Text = "CATEGORY";
             // 
             // Category
             // 

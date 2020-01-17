@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class Products
+    partial class Inventory
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,28 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.InventoryLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // InventoryLabel
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(400, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PRODUCTS";
+            this.InventoryLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.InventoryLabel.AutoSize = true;
+            this.InventoryLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InventoryLabel.ForeColor = System.Drawing.Color.Black;
+            this.InventoryLabel.Location = new System.Drawing.Point(400, 12);
+            this.InventoryLabel.Name = "InventoryLabel";
+            this.InventoryLabel.Size = new System.Drawing.Size(95, 19);
+            this.InventoryLabel.TabIndex = 0;
+            this.InventoryLabel.Text = "INVENTORY";
             // 
-            // Products
+            // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Name = "Products";
+            this.Controls.Add(this.InventoryLabel);
+            this.Name = "Inventory";
             this.Size = new System.Drawing.Size(963, 561);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -58,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label InventoryLabel;
     }
 }

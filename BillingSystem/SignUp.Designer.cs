@@ -175,7 +175,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(335, 83);
+            this.label8.Location = new System.Drawing.Point(336, 12);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(279, 25);
             this.label8.TabIndex = 13;

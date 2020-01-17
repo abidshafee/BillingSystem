@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class Products
+    partial class Transaction
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,21 +35,20 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(400, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 19);
+            this.label1.Size = new System.Drawing.Size(117, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PRODUCTS";
+            this.label1.Text = "TRANSACTION";
             // 
-            // Products
+            // Transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "Products";
+            this.Name = "Transaction";
             this.Size = new System.Drawing.Size(963, 561);
             this.ResumeLayout(false);
             this.PerformLayout();

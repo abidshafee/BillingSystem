@@ -27,7 +27,26 @@ namespace BillingSystem
             set {MainPanel = value;}
         }
 
+        // Login Validation
         private Control currentControl;
+
+        public void ChangeControl(UserLogin login)
+        {
+            if(login == null)
+            {
+                throw new ArgumentNullException("login");
+            }
+            if (currentControl != null)
+            {
+                Controls.Remove(currentControl);
+            }
+            Controls.Add(UserLogin.Instance);
+            currentControl = login;
+            
+
+        } // End Login Validation
+        
+        /// </summary>
 
         /* public const int WM_NCLBUTTONDOWN = 0xA1;
          public const int HT_CAPTION = 0x2;
@@ -138,24 +157,58 @@ namespace BillingSystem
         {
             //null
         }
-
+        /*
         private void BgLoginBtn_Click(object sender, EventArgs e)
         {
-            if (!MainPanel.Controls.Contains(UserLogin.Instance))
+            if (!MainPanel.Controls.Contains(Inventory.Instance))
             {
-                MainPanel.Controls.Add(UserLogin.Instance);
-                UserLogin.Instance.Dock = DockStyle.Fill;
-                UserLogin.Instance.BringToFront();
+                MainPanel.Controls.Add(Inventory.Instance);
+                Inventory.Instance.Dock = DockStyle.Fill;
+                Inventory.Instance.BringToFront();
             }
             else
             {
-                UserLogin.Instance.BringToFront();
+                Inventory.Instance.BringToFront();
             }
         }
+        */
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void inventoryBtn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(Inventory.Instance))
+            {
+                MainPanel.Controls.Add(Inventory.Instance);
+                Inventory.Instance.Dock = DockStyle.Fill;
+                Inventory.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+            else
+            {
+                Inventory.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+
+        }
+
+        private void transactionBtn_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(Transaction.Instance))
+            {
+                MainPanel.Controls.Add(Transaction.Instance);
+                Transaction.Instance.Dock = DockStyle.Fill;
+                Transaction.Instance.BringToFront();
+                SPan_timer.Start();
+            }
+            else
+            {
+                Transaction.Instance.BringToFront();
+                SPan_timer.Start();
+            }
         }
 
         // private void pictureBox1_Click(object sender, EventArgs e)
